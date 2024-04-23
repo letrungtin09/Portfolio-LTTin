@@ -1,0 +1,32 @@
+header {
+  padding: $pd-1 0;
+  .ltt__navbar {
+    .navbar-brand {
+      margin-right: 0;
+      img {
+        width: 57px;
+        height: 57px;
+      }
+    }
+    #navbarLTT {
+      .navbar-nav {
+        width: 100%;
+        justify-content: center;
+        .nav-item {
+          margin: 0 $mg-1;
+          .nav-link {
+            @include styleText($color-white-2, $fs-0, $fw-3);
+            text-transform: uppercase;
+            letter-spacing: $ls-0;
+            &:hover {
+              color: $color-green-0;
+            }
+            &.active {
+              color: $color-green-0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

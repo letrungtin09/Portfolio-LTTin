@@ -5,4 +5,11 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  background-color: $color-black-1;
+  color: $color-white-0;
+  font-size: $fs-1;
+}
+.container-ltt {
+  padding-left: $pd-5 !important;
+  padding-right: $pd-5 !important;
 }

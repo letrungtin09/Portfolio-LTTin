@@ -1,0 +1,35 @@
+@mixin styleText($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin styleButton($color, $bg-color, $border-radius, $fs, $fw, $pd-y, $pd-x) {
+  color: $color;
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  font-size: $fs;
+  font-weight: $fw;
+  padding: $pd-y $pd-x;
+  border: none;
+  transition: all 0.3s;
+}
+
+@mixin hoverButton($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+}
+
+@mixin responsive($screen) {
+  @if map-has-key($map: $breakpoints, $key: $screen) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "`{$screen}` is not supported";
+  }
+}

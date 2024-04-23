@@ -1,0 +1,14 @@
+.btn--green {
+  @include styleButton(
+    $color-black-1,
+    $color-green-0,
+    $border-radius-2,
+    $fs-0,
+    $fw-4,
+    $pd-0 + 2,
+    $pd-2 + 5
+  );
+  &:hover {
+    @include hoverButton($color-white-2, $color-green-1);
+  }
+}
