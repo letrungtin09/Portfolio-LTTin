@@ -12,7 +12,7 @@
   font-weight: $fw;
   padding: $pd-y $pd-x;
   border: none;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 @mixin hoverButton($color, $bg-color) {

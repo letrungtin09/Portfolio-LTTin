@@ -1,0 +1,97 @@
+.cover {
+  height: 590px;
+  .cover__content {
+    height: 100%;
+    .row {
+      height: 100%;
+    }
+    .cover__intro {
+      letter-spacing: $ls-1;
+      .cover__career {
+        @include styleText($color-green-0, $fs-2, $fw-3);
+      }
+      .cover__fullName {
+        @include styleText($color-green-3, $fs-5, $fw-4);
+        animation: text-shadow-drop-center 0.7s both;
+        letter-spacing: $ls-2;
+        margin: $mg-0 0;
+        .cover__name {
+          color: $color-green-0;
+        }
+      }
+      .cover__info {
+        color: $color-white-3;
+        margin-bottom: $mg-3;
+      }
+      .cover__btn {
+        button {
+          animation: heartbeat 3s ease-in-out infinite both;
+          font-size: $fs-0;
+          &:hover {
+            .btn-downloadCV {
+              color: $color-white-2;
+            }
+          }
+        }
+        .btn-downloadCV {
+          text-decoration: none;
+          color: $color-black-1;
+          transition: all 0.5s;
+        }
+      }
+    }
+    .cover__avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 340px;
+        height: 390px;
+        object-fit: cover;
+        border-radius: $border-radius-4;
+        border: 5px solid $color-green-0;
+        background-color: $color-green-1;
+        filter: brightness(0.9);
+        box-shadow: 0 0 25px 5px $color-green-3;
+        transition: all 0.7s;
+        &:hover {
+          filter: brightness(1);
+          box-shadow: 3px 5px 25px 5px $color-green-3;
+        }
+      }
+    }
+  }
+}
+
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 transparent;
+  }
+  100% {
+    text-shadow: 0 0 19px $color-green-0;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}

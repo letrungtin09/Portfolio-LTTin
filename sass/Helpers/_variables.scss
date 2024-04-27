@@ -2,9 +2,11 @@
 $color-black-0: #000;
 $color-black-1: #222831;
 $color-black-2: #393e46;
+$color-black-3: rgba(228, 249, 245, 0.3);
 $color-white-0: #fff;
 $color-white-1: #f5f5f5;
 $color-white-2: #eeeeee;
+$color-white-3: #c7c7c7;
 $color-green-0: #30e3ca;
 $color-green-1: #11999e;
 $color-green-2: #40514e;
@@ -25,9 +27,12 @@ $fs-1: 0.875rem;
 $fs-2: 1.25rem;
 $fs-3: 1.5rem;
 $fs-4: 0.75rem;
+$fs-5: 3.125rem;
 
 //LETTER-SPACING
 $ls-0: 0.5px;
+$ls-1: 1.5px;
+$ls-2: 3px;
 
 //PADDING
 $pd-0: 5px;
@@ -35,7 +40,7 @@ $pd-1: 10px;
 $pd-2: 15px;
 $pd-3: 30px;
 $pd-4: 50px;
-$pd-5: 70px;
+$pd-5: 150px;
 
 //MARGIN
 $mg-0: 5px;
@@ -47,7 +52,9 @@ $mg-3: 30px;
 $border-radius-0: 5px;
 $border-radius-1: 10px;
 $border-radius-2: 20px;
-$border-radius-3: 50%;
+$border-radius-3: 50px;
+$border-radius-4: 50%;
+$border-radius-5: 41px;
 
 //BREAKPOINTS
 $breakpoints: (

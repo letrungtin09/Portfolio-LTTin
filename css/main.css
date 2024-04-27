@@ -12,8 +12,8 @@ body {
 }
 
 .container-ltt {
-  padding-left: 70px !important;
-  padding-right: 70px !important;
+  padding-left: 150px !important;
+  padding-right: 150px !important;
 }
 
 header {
@@ -26,36 +26,161 @@ header .ltt__navbar .navbar-brand img {
   width: 57px;
   height: 57px;
 }
-header .ltt__navbar #navbarLTT .navbar-nav {
-  width: 100%;
+header .ltt__navbar #navbarLTT {
   justify-content: center;
 }
+header .ltt__navbar #navbarLTT .navbar-nav {
+  padding: 9px;
+  background-color: rgba(228, 249, 245, 0.3);
+  border-radius: 50px;
+}
 header .ltt__navbar #navbarLTT .navbar-nav .nav-item {
-  margin: 0 10px;
+  margin-right: 15px;
 }
 header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link {
   color: #eeeeee;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  padding: 7px 15px;
+  transition: all 0.7s;
+  position: relative;
+  z-index: 10;
+}
+header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #393e46;
+  border-radius: 41px;
+  transition: all 0.5s;
 }
 header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link:hover {
   color: #30e3ca;
 }
+header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link:hover::after {
+  height: 100%;
+}
 header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active {
+  background-color: #393e46;
+  border-radius: 41px;
   color: #30e3ca;
 }
+header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::after {
+  content: unset;
+}
 
+.cover {
+  height: 590px;
+}
+.cover .cover__content {
+  height: 100%;
+}
+.cover .cover__content .row {
+  height: 100%;
+}
+.cover .cover__content .cover__intro {
+  letter-spacing: 1.5px;
+}
+.cover .cover__content .cover__intro .cover__career {
+  color: #30e3ca;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.cover .cover__content .cover__intro .cover__fullName {
+  color: #e4f9f5;
+  font-size: 3.125rem;
+  font-weight: 700;
+  animation: text-shadow-drop-center 0.7s both;
+  letter-spacing: 3px;
+  margin: 5px 0;
+}
+.cover .cover__content .cover__intro .cover__fullName .cover__name {
+  color: #30e3ca;
+}
+.cover .cover__content .cover__intro .cover__info {
+  color: #c7c7c7;
+  margin-bottom: 30px;
+}
+.cover .cover__content .cover__intro .cover__btn button {
+  animation: heartbeat 3s ease-in-out infinite both;
+  font-size: 1rem;
+}
+.cover .cover__content .cover__intro .cover__btn button:hover .btn-downloadCV {
+  color: #eeeeee;
+}
+.cover .cover__content .cover__intro .cover__btn .btn-downloadCV {
+  text-decoration: none;
+  color: #222831;
+  transition: all 0.5s;
+}
+.cover .cover__content .cover__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover .cover__content .cover__avatar img {
+  width: 340px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #30e3ca;
+  background-color: #11999e;
+  filter: brightness(0.9);
+  box-shadow: 0 0 25px 5px #e4f9f5;
+  transition: all 0.7s;
+}
+.cover .cover__content .cover__avatar img:hover {
+  filter: brightness(1);
+  box-shadow: 3px 5px 25px 5px #e4f9f5;
+}
+
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 transparent;
+  }
+  100% {
+    text-shadow: 0 0 19px #30e3ca;
+  }
+}
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
 .btn--green {
   color: #222831;
   background-color: #30e3ca;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
   padding: 7px 20px;
   border: none;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .btn--green:hover {
   color: #eeeeee;
