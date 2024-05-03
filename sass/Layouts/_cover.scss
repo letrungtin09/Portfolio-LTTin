@@ -1,5 +1,9 @@
 .cover {
   height: 590px;
+  background-image: url(../../images/cover.png);
+  background-repeat: no-repeat;
+  background-position: -190px -25px;
+  background-size: 1000px;
   .cover__content {
     height: 100%;
     .row {
@@ -22,10 +26,11 @@
       .cover__info {
         color: $color-white-3;
         margin-bottom: $mg-3;
+        width: 370px;
       }
       .cover__btn {
         button {
-          animation: heartbeat 3s ease-in-out infinite both;
+          animation: heartbeat 1.5s ease-in-out infinite both;
           font-size: $fs-0;
           &:hover {
             .btn-downloadCV {
@@ -40,23 +45,75 @@
         }
       }
     }
-    .cover__avatar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 340px;
-        height: 390px;
-        object-fit: cover;
-        border-radius: $border-radius-4;
-        border: 5px solid $color-green-0;
-        background-color: $color-green-1;
-        filter: brightness(0.9);
-        box-shadow: 0 0 25px 5px $color-green-3;
-        transition: all 0.7s;
-        &:hover {
-          filter: brightness(1);
-          box-shadow: 3px 5px 25px 5px $color-green-3;
+    .cover__imgLTT {
+      position: relative;
+      .cover__avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .avatarLTTin {
+          width: 340px;
+          height: 390px;
+          object-fit: cover;
+          border-radius: $border-radius-4;
+          border: 5px solid $color-green-0;
+          background-color: $color-green-1;
+          filter: brightness(0.9);
+          // box-shadow: 0 0 25px 0px $color-green-3;
+          transition: all 0.5s;
+          &:hover {
+            filter: brightness(1);
+            transform: scale(1.05);
+          }
+        }
+      }
+      .cover__proIcons {
+        .cover__proIcons__item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          height: 70px;
+          padding: $pd-1;
+          background-color: $color-white-2;
+          border-radius: $border-radius-2;
+          border: 5px solid $color-green-0;
+          transition: all 0.5s;
+          &:hover {
+            background-color: $color-white-0;
+          }
+          img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            animation: pulsate-bck 1.5s ease-in-out infinite both;
+          }
+        }
+        .htmlIcon {
+          position: absolute;
+          top: 25px;
+          left: 135px;
+        }
+        .cssIcon {
+          position: absolute;
+          top: 75px;
+          right: 120px;
+        }
+        .frameworkIcon {
+          justify-content: space-around;
+          width: 140px;
+          position: absolute;
+          bottom: 50px;
+          left: 90px;
+        }
+        .jsIcon {
+          position: absolute;
+          bottom: 15px;
+          right: 150px;
+          img {
+            width: 40px;
+            height: 40px;
+          }
         }
       }
     }
@@ -93,5 +150,17 @@
   45% {
     transform: scale(1);
     animation-timing-function: ease-out;
+  }
+}
+
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
   }
 }

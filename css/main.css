@@ -78,6 +78,10 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
 
 .cover {
   height: 590px;
+  background-image: url(../../images/cover.png);
+  background-repeat: no-repeat;
+  background-position: -190px -25px;
+  background-size: 1000px;
 }
 .cover .cover__content {
   height: 100%;
@@ -107,9 +111,10 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
 .cover .cover__content .cover__intro .cover__info {
   color: #c7c7c7;
   margin-bottom: 30px;
+  width: 370px;
 }
 .cover .cover__content .cover__intro .cover__btn button {
-  animation: heartbeat 3s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
   font-size: 1rem;
 }
 .cover .cover__content .cover__intro .cover__btn button:hover .btn-downloadCV {
@@ -120,12 +125,15 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
   color: #222831;
   transition: all 0.5s;
 }
-.cover .cover__content .cover__avatar {
+.cover .cover__content .cover__imgLTT {
+  position: relative;
+}
+.cover .cover__content .cover__imgLTT .cover__avatar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cover .cover__content .cover__avatar img {
+.cover .cover__content .cover__imgLTT .cover__avatar .avatarLTTin {
   width: 340px;
   height: 390px;
   object-fit: cover;
@@ -133,12 +141,58 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
   border: 5px solid #30e3ca;
   background-color: #11999e;
   filter: brightness(0.9);
-  box-shadow: 0 0 25px 5px #e4f9f5;
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
-.cover .cover__content .cover__avatar img:hover {
+.cover .cover__content .cover__imgLTT .cover__avatar .avatarLTTin:hover {
   filter: brightness(1);
-  box-shadow: 3px 5px 25px 5px #e4f9f5;
+  transform: scale(1.05);
+}
+.cover .cover__content .cover__imgLTT .cover__proIcons .cover__proIcons__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  border: 5px solid #30e3ca;
+  transition: all 0.5s;
+}
+.cover .cover__content .cover__imgLTT .cover__proIcons .cover__proIcons__item:hover {
+  background-color: #fff;
+}
+.cover .cover__content .cover__imgLTT .cover__proIcons .cover__proIcons__item img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  animation: pulsate-bck 1.5s ease-in-out infinite both;
+}
+.cover .cover__content .cover__imgLTT .cover__proIcons .htmlIcon {
+  position: absolute;
+  top: 25px;
+  left: 135px;
+}
+.cover .cover__content .cover__imgLTT .cover__proIcons .cssIcon {
+  position: absolute;
+  top: 75px;
+  right: 120px;
+}
+.cover .cover__content .cover__imgLTT .cover__proIcons .frameworkIcon {
+  justify-content: space-around;
+  width: 140px;
+  position: absolute;
+  bottom: 50px;
+  left: 90px;
+}
+.cover .cover__content .cover__imgLTT .cover__proIcons .jsIcon {
+  position: absolute;
+  bottom: 15px;
+  right: 150px;
+}
+.cover .cover__content .cover__imgLTT .cover__proIcons .jsIcon img {
+  width: 40px;
+  height: 40px;
 }
 
 @keyframes text-shadow-drop-center {
@@ -170,6 +224,17 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
   45% {
     transform: scale(1);
     animation-timing-function: ease-out;
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .btn--green {
