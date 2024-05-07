@@ -1,8 +1,9 @@
 .cover {
-  height: 590px;
+  padding-top: $pd-6;
+  height: 700px;
   background-image: url(../../images/cover.png);
   background-repeat: no-repeat;
-  background-position: -190px -25px;
+  background-position: -190px 79px;
   background-size: 1000px;
   .cover__content {
     height: 100%;
@@ -12,23 +13,26 @@
     .cover__intro {
       letter-spacing: $ls-1;
       .cover__career {
+        animation-delay: 1.5s;
         @include styleText($color-green-0, $fs-2, $fw-3);
       }
-      .cover__fullName {
-        @include styleText($color-green-3, $fs-5, $fw-4);
-        animation: text-shadow-drop-center 0.7s both;
-        letter-spacing: $ls-2;
-        margin: $mg-0 0;
-        .cover__name {
-          color: $color-green-0;
+      .cover__name {
+        animation-delay: 0.5s;
+        .cover__fullName {
+          @include styleText($color-white-0, $fs-5, $fw-4);
+          animation: text-shadow-drop-center 0.7s both;
+          letter-spacing: $ls-2;
+          margin: $mg-0 0;
         }
       }
       .cover__info {
         color: $color-white-3;
         margin-bottom: $mg-3;
         width: 370px;
+        animation-delay: 0.5s;
       }
       .cover__btn {
+        animation-delay: 1.5s;
         button {
           animation: heartbeat 1.5s ease-in-out infinite both;
           font-size: $fs-0;
@@ -40,7 +44,7 @@
         }
         .btn-downloadCV {
           text-decoration: none;
-          color: $color-black-1;
+          color: $color-white-0;
           transition: all 0.5s;
         }
       }
@@ -75,12 +79,12 @@
           width: 70px;
           height: 70px;
           padding: $pd-1;
-          background-color: $color-white-2;
+          background-color: $color-white-0;
           border-radius: $border-radius-2;
           border: 5px solid $color-green-0;
           transition: all 0.5s;
           &:hover {
-            background-color: $color-white-0;
+            background-color: $color-white-2;
           }
           img {
             width: 45px;
@@ -93,11 +97,13 @@
           position: absolute;
           top: 25px;
           left: 135px;
+          animation-delay: 1.5s;
         }
         .cssIcon {
           position: absolute;
           top: 75px;
           right: 120px;
+          animation-delay: 2s;
         }
         .frameworkIcon {
           justify-content: space-around;
@@ -105,11 +111,13 @@
           position: absolute;
           bottom: 50px;
           left: 90px;
+          animation-delay: 2.5s;
         }
         .jsIcon {
           position: absolute;
           bottom: 15px;
           right: 150px;
+          animation-delay: 3s;
           img {
             width: 40px;
             height: 40px;

@@ -1,14 +1,36 @@
 .btn--green {
   @include styleButton(
-    $color-black-1,
-    $color-green-0,
+    $color-white-0,
+    linear-gradient(to right, $color-green-0 0%, $color-green-1 100%),
     $border-radius-2,
     $fs-1,
     $fw-4,
     $pd-0 + 2,
     $pd-2 + 5
   );
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 110%;
+    height: 100%;
+    background-color: $color-green-1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: skewX(30deg) translateX(-110%);
+    transition: all 0.5s;
+  }
   &:hover {
-    @include hoverButton($color-white-2, $color-green-1);
+    &::before {
+      transform: skewX(30deg) translateX(-10px);
+    }
+  }
+  span,
+  a {
+    position: relative;
+    z-index: 2;
   }
 }

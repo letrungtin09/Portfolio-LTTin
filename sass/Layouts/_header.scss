@@ -1,16 +1,7 @@
-// .overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-//   width: 100%;
-//   img {
-//     width: 100%;
-//     height: 690px;
-//     object-fit: cover;
-//   }
-// }
 header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   padding: $pd-1 0;
   .ltt__navbar {
     .navbar-brand {
@@ -18,6 +9,10 @@ header {
       img {
         width: 57px;
         height: 57px;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
     #navbarLTT {
@@ -29,7 +24,7 @@ header {
         .nav-item {
           margin-right: $mg-2;
           .nav-link {
-            @include styleText($color-white-2, $fs-1, $fw-3);
+            @include styleText($color-white-0, $fs-1, $fw-3);
             text-transform: uppercase;
             letter-spacing: $ls-0;
             padding: $pd-0 + 2 $pd-2;

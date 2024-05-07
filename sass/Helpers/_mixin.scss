@@ -6,7 +6,7 @@
 
 @mixin styleButton($color, $bg-color, $border-radius, $fs, $fw, $pd-y, $pd-x) {
   color: $color;
-  background-color: $bg-color;
+  background: $bg-color;
   border-radius: $border-radius;
   font-size: $fs;
   font-weight: $fw;
