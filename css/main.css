@@ -21,6 +21,7 @@ header {
   z-index: 100;
   width: 100%;
   padding: 10px 0;
+  background-color: #222831;
 }
 header .ltt__navbar .navbar-brand {
   margin-right: 0;
@@ -128,15 +129,6 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
 }
 .cover .cover__content .cover__intro .cover__btn button {
   animation: heartbeat 1.5s ease-in-out infinite both;
-  font-size: 1rem;
-}
-.cover .cover__content .cover__intro .cover__btn button:hover .btn-downloadCV {
-  color: #eeeeee;
-}
-.cover .cover__content .cover__intro .cover__btn .btn-downloadCV {
-  text-decoration: none;
-  color: #fff;
-  transition: all 0.5s;
 }
 .cover .cover__content .cover__imgLTT {
   position: relative;
@@ -190,7 +182,7 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
 .cover .cover__content .cover__imgLTT .cover__proIcons .cssIcon {
   position: absolute;
   top: 75px;
-  right: 120px;
+  right: 105px;
   animation-delay: 2s;
 }
 .cover .cover__content .cover__imgLTT .cover__proIcons .frameworkIcon {
@@ -198,7 +190,7 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
   width: 140px;
   position: absolute;
   bottom: 50px;
-  left: 90px;
+  left: 75px;
   animation-delay: 2.5s;
 }
 .cover .cover__content .cover__imgLTT .cover__proIcons .jsIcon {
@@ -210,6 +202,213 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
 .cover .cover__content .cover__imgLTT .cover__proIcons .jsIcon img {
   width: 40px;
   height: 40px;
+}
+
+.about {
+  background-image: url(../../images/bg-a8.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 700px;
+}
+.about .about__overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(34, 40, 49, 0.7) 50%, rgba(34, 40, 49, 0.9) 50%);
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.about .about__overlay .row {
+  height: 100%;
+}
+.about .about__overlay .about__title {
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.about .about__overlay .about__title span {
+  color: #eeeeee;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+}
+.about .about__overlay .about__title span::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+.about .about__overlay .about__info {
+  padding-top: 50px;
+  padding-right: 50px;
+}
+.about .about__overlay .about__info .about__text .about__intro {
+  margin: 30px 0 15px;
+  text-align: justify;
+}
+.about .about__overlay .about__info .about__contact {
+  margin-bottom: 10px;
+}
+.about .about__overlay .about__info .about__contact .about__contact__item {
+  margin-bottom: 5px;
+}
+.about .about__overlay .about__info .about__contact .about__contact__item i {
+  font-size: 1rem;
+  margin-right: 5px;
+  color: #30e3ca;
+}
+.about .about__overlay .about__info .about__contact .about__contact__item a {
+  text-decoration: none;
+  color: #e4f9f5;
+}
+.about .about__overlay .about__info .about__social {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 30px;
+}
+.about .about__overlay .about__info .about__social .about__social__item {
+  margin-right: 15px;
+}
+.about .about__overlay .about__info .about__social .about__social__item i {
+  font-size: 1.25rem;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.about .about__overlay .about__info .about__social .about__social__item i:hover {
+  background-color: #eeeeee;
+}
+.about .about__overlay .about__info .about__social .about__social__item .social-fb {
+  color: #0866ff;
+}
+.about .about__overlay .about__info .about__social .about__social__item .social-linked {
+  color: #0075b4;
+}
+.about .about__overlay .about__info .about__social .about__social__item .social-github {
+  color: #000;
+}
+.about .about__overlay .about__info .about__btn button {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+.about .about__overlay .about__skills {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.about .about__overlay .about__skills .about__proLang {
+  margin-top: 30px;
+}
+.about .about__overlay .about__skills .about__proLang .about__proLang__item {
+  margin-bottom: 23px;
+}
+.about .about__overlay .about__skills .about__proLang .about__proLang__item .about__imgProLang {
+  margin-bottom: 13px;
+}
+.about .about__overlay .about__skills .about__proLang .about__proLang__item .about__imgProLang img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-right: 7px;
+  animation: pulsate-bck 1.5s ease-in-out infinite both;
+}
+.about .about__overlay .about__skills .about__proLang .about__proLang__item .html-css.active .progressBar__run {
+  width: 90%;
+}
+.about .about__overlay .about__skills .about__proLang .about__proLang__item .js-ts.active .progressBar__run {
+  width: 70%;
+}
+.about .about__overlay .about__skills .about__proLang .about__proLang__item .bs-sass.active .progressBar__run {
+  width: 80%;
+}
+.about .about__overlay .about__skills .about__proLang .about__proLang__item .react-angular.active .progressBar__run {
+  width: 60%;
+}
+
+.btn--green {
+  color: #fff;
+  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 7px 20px;
+  border: none;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.btn--green::before {
+  content: "";
+  display: inline-block;
+  width: 110%;
+  height: 100%;
+  background-color: #11999e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: skewX(30deg) translateX(-110%);
+  transition: all 0.5s;
+}
+.btn--green:hover::before {
+  transform: skewX(30deg) translateX(-10px);
+}
+.btn--green span,
+.btn--green a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.progressBar {
+  height: 30px;
+  background-color: #11999e;
+  position: relative;
+}
+.progressBar .progressBar__run {
+  width: 1%;
+  height: 100%;
+  position: absolute;
+  background-color: #e4f9f5;
+  transition: width 0.7s ease;
+}
+.progressBar .progressBar__run .progressBar__counter {
+  min-width: 25px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: -23px;
+  right: -25px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #222831;
+  padding: 0 10px;
+}
+.progressBar .progressBar__run .progressBar__counter::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 13px;
+  border-style: solid;
+  border-color: transparent;
+  display: inline-block;
+  border-width: 3.5px;
+  border-top-color: #fff;
+}
+.progressBar .progressBar__text {
+  position: absolute;
+  color: #222831;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  padding-left: 10px;
+  line-height: 30px;
 }
 
 @keyframes text-shadow-drop-center {
@@ -253,53 +452,4 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
   100% {
     transform: scale(1);
   }
-}
-.about {
-  background-image: url(../../images/bg-a6.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 700px;
-}
-.about .about__overlay {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(34, 40, 49, 0.5) 50%, rgba(34, 40, 49, 0.7) 50%);
-  padding-top: 85px;
-  padding-bottom: 85px;
-}
-
-.btn--green {
-  color: #fff;
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
-  border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  padding: 7px 20px;
-  border: none;
-  transition: all 0.5s;
-  position: relative;
-  overflow: hidden;
-}
-.btn--green::before {
-  content: "";
-  display: inline-block;
-  width: 110%;
-  height: 100%;
-  background-color: #11999e;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transform: skewX(30deg) translateX(-110%);
-  transition: all 0.5s;
-}
-.btn--green:hover::before {
-  transform: skewX(30deg) translateX(-10px);
-}
-.btn--green span,
-.btn--green a {
-  position: relative;
-  z-index: 2;
 }/*# sourceMappingURL=main.css.map */

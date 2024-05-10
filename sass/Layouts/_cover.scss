@@ -35,17 +35,6 @@
         animation-delay: 1.5s;
         button {
           animation: heartbeat 1.5s ease-in-out infinite both;
-          font-size: $fs-0;
-          &:hover {
-            .btn-downloadCV {
-              color: $color-white-2;
-            }
-          }
-        }
-        .btn-downloadCV {
-          text-decoration: none;
-          color: $color-white-0;
-          transition: all 0.5s;
         }
       }
     }
@@ -102,7 +91,7 @@
         .cssIcon {
           position: absolute;
           top: 75px;
-          right: 120px;
+          right: 105px;
           animation-delay: 2s;
         }
         .frameworkIcon {
@@ -110,7 +99,7 @@
           width: 140px;
           position: absolute;
           bottom: 50px;
-          left: 90px;
+          left: 75px;
           animation-delay: 2.5s;
         }
         .jsIcon {
@@ -125,50 +114,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes text-shadow-drop-center {
-  0% {
-    text-shadow: 0 0 0 transparent;
-  }
-  100% {
-    text-shadow: 0 0 19px $color-green-0;
-  }
-}
-
-@keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
-}
-
-@keyframes pulsate-bck {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
   }
 }

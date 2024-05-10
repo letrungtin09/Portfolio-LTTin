@@ -3,7 +3,7 @@
     $color-white-0,
     linear-gradient(to right, $color-green-0 0%, $color-green-1 100%),
     $border-radius-2,
-    $fs-1,
+    $fs-0,
     $fw-4,
     $pd-0 + 2,
     $pd-2 + 5
@@ -32,5 +32,7 @@
   a {
     position: relative;
     z-index: 2;
+    color: $color-white-0;
+    text-decoration: none;
   }
 }
