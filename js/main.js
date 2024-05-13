@@ -1,3 +1,12 @@
+window.onload = () => {
+  navBarActive();
+};
+
+window.onscroll = () => {
+  activeProgress();
+  scrollNavBarActive();
+};
+
 // navBar active
 function navBarActive() {
   let mainNav = document.getElementById("mainNav");
@@ -13,7 +22,7 @@ function navBarActive() {
 }
 
 // progressBar active
-window.onscroll = function (event) {
+function activeProgress() {
   let progressBars = document.getElementsByClassName("progressBar");
   Array.from(progressBars).forEach((bar) => {
     let windowTop = window.scrollY;
@@ -24,6 +33,24 @@ window.onscroll = function (event) {
       bar.classList.add("active");
     }
   });
-};
+}
 
-navBarActive();
+//active navbar on scroll
+function scrollNavBarActive() {
+  let sections = document.querySelectorAll("section");
+  let links = document.querySelectorAll(".nav-link");
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let idSection = sec.getAttribute("id");
+    if (top >= offset && top < offset + height) {
+      links.forEach((link) => {
+        link.classList.remove("active");
+        document
+          .querySelector(".nav-link[href*=" + idSection + "]")
+          .classList.add("active");
+      });
+    }
+  });
+}

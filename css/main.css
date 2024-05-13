@@ -321,10 +321,10 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::aft
   width: 90%;
 }
 .about .about__overlay .about__skills .about__proLang .about__proLang__item .js-ts.active .progressBar__run {
-  width: 70%;
+  width: 75%;
 }
 .about .about__overlay .about__skills .about__proLang .about__proLang__item .bs-sass.active .progressBar__run {
-  width: 80%;
+  width: 85%;
 }
 .about .about__overlay .about__skills .about__proLang .about__proLang__item .react-angular.active .progressBar__run {
   width: 60%;
