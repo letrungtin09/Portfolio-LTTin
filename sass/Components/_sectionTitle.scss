@@ -1,0 +1,22 @@
+.section__title {
+  letter-spacing: $ls-1;
+  span {
+    @include styleText($color-white-2, $fs-3, $fw-3);
+    position: relative;
+    padding-bottom: $pd-0 - 2;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(
+        to right,
+        $color-green-0 0%,
+        $color-green-1 100%
+      );
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+  }
+}

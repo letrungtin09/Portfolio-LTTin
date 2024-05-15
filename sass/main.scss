@@ -14,10 +14,15 @@
 @import "./Layouts/footer";
 @import "./Layouts/cover";
 @import "./Layouts/about";
+@import "./Layouts/education";
 
 //Components
 @import "./Components/button";
 @import "./Components/progressBar";
-@import "./Components/animation"; //Pages
+@import "./Components/animation";
+@import "./Components/timeline";
+@import "./Components/sectionTitle";
+
+//Pages
 
 //Theme

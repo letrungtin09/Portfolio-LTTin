@@ -1,0 +1,91 @@
+.timeline {
+  margin-top: $mg-3;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    background-color: $color-green-3;
+    top: 0;
+    bottom: 15px;
+    left: 50%;
+    border-radius: $border-radius-1;
+  }
+  .timeline__container {
+    padding: $pd-3 + 5 $pd-3;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    animation: move-up-down 1.5s linear infinite both;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 100px;
+      right: -15px;
+      background-color: $color-green-3;
+      border: 4px solid $color-pink-0;
+      border-radius: $border-radius-4;
+      z-index: 1;
+      animation: pulsate-bck 1.5s ease-in-out infinite both;
+    }
+    .timeline__time {
+      background-color: $color-green-1;
+      @include styleText($color-white-0, $fs-0, $fw-4);
+      padding: $pd-1 0;
+      text-align: center;
+      border-top-left-radius: $border-radius-1;
+      border-top-right-radius: $border-radius-1;
+    }
+    .timeline__content {
+      padding: $pd-2 $pd-3;
+      background-color: $color-green-3;
+      color: $color-black-1;
+      border-bottom-left-radius: $border-radius-1;
+      border-bottom-right-radius: $border-radius-1;
+      .timeline__logo {
+        margin-bottom: $mg-2;
+        img {
+          width: 150px;
+        }
+      }
+      .timeline__title {
+        margin-bottom: $mg-0;
+      }
+      .timeline__text {
+        margin-bottom: $mg-2;
+      }
+      .timeline__btn {
+        button {
+          margin-right: $mg-1;
+        }
+      }
+    }
+  }
+  .timeline__left {
+    left: 0;
+    padding-left: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100px;
+      right: 5px;
+      @include arrow(13px, right, $color-green-3);
+    }
+  }
+  .timeline__right {
+    left: 50%;
+    padding-right: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100px;
+      left: 5px;
+      @include arrow(13px, left, $color-green-3);
+    }
+    &::after {
+      left: -10px;
+    }
+  }
+}
