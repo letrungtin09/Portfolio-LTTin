@@ -8,6 +8,7 @@ body {
   background-color: $color-black-1;
   color: $color-white-0;
   font-size: $fs-1;
+  scroll-behavior: smooth;
 }
 .container-ltt {
   padding-left: $pd-5 !important;
