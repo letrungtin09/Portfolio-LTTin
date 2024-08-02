@@ -34,6 +34,9 @@
     z-index: 2;
     color: $color-white-0;
     text-decoration: none;
+    i {
+      margin-left: $mg-0 - 2;
+    }
   }
 }
 
@@ -73,5 +76,8 @@
     z-index: 2;
     color: $color-white-0;
     text-decoration: none;
+    i {
+      margin-left: $mg-0 - 2;
+    }
   }
 }

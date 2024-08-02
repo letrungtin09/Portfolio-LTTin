@@ -72,3 +72,7 @@ function backToTop() {
     window.scrollTo(0, 0);
   };
 }
+
+// fancybox
+Fancybox.bind("[data-fancybox='gallery-fpoly']", {});
+Fancybox.bind("[data-fancybox='gallery-cyber']", {});

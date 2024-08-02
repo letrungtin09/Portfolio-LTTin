@@ -65,5 +65,20 @@ header {
         }
       }
     }
+    .darkLightMode {
+      .btn-mode {
+        font-size: $fs-2;
+        border-radius: $border-radius-4;
+        padding: $pd-0 + 2 $pd-2 + 2;
+        i {
+          color: $color-black-1;
+        }
+        &:hover {
+          &::before {
+            transform: skewX(30deg) translateX(-2.5px);
+          }
+        }
+      }
+    }
   }
 }

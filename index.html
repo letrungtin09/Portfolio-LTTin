@@ -16,6 +16,8 @@
         rel="stylesheet">
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FANCYBOX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -49,8 +51,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contact__me">
-                    <button class="btn--green btn-contact"><span>Contact me</span></button>
+                <div class="darkLightMode">
+                    <button class="btn--green btn-mode"><span><i class="fa-solid fa-moon ms-0"></i></span></button>
                 </div>
             </div>
         </nav>
@@ -66,11 +68,10 @@
                             Web Developer
                         </div>
                         <div class="cover__name animate__animated animate__fadeInDown">
-                            <div class="cover__fullName">Lê Trung Tín</div>
+                            <div class="cover__fullName">Le Trung Tin</div>
                         </div>
-                        <div class="cover__info animate__animated animate__fadeInUp">A
-                            professional Front-end
-                            developer working on 20+ projects.</div>
+                        <div class="cover__info animate__animated animate__fadeInUp">A professional Front-end developer
+                            works conscientiously, meticulously and effectively.</div>
                         <div class="cover__btn animate__animated animate__fadeInUp">
                             <button type="button" class="btn--green" data-bs-toggle="modal"
                                 data-bs-target="#CVModalCover">
@@ -113,8 +114,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <object class="pdf" data="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
-                        </object>
+                        <iframe class="pdf" src="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -250,8 +251,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <object class="pdf" data="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
-                        </object>
+                        <iframe class="pdf" src="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -290,6 +291,20 @@
                     </div>
                 </div>
             </div>
+            <div class="timeline__container timeline__imagesRight">
+                <div class="timeline__time"><i class="fa-solid fa-image"></i> Pictures while studying at FPT Polytechnic
+                </div>
+                <div class="timeline__content timeline__flex">
+                    <div class="timeline__gallery">
+                        <a href="/images/fpoly1.png" data-fancybox="gallery-fpoly"><img src="/images/fpoly1.png"
+                                alt=""></a>
+                        <a href="/images/fpoly2.png" data-fancybox="gallery-fpoly"><img src="/images/fpoly2.png"
+                                alt=""></a>
+                        <a href="/images/fpoly3.png" data-fancybox="gallery-fpoly"><img src="/images/fpoly3.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
             <div class="timeline__container timeline__right">
                 <div class="timeline__time"><i class="fa-solid fa-calendar-days"></i> December 2022 - June 2023</div>
                 <div class="timeline__content">
@@ -312,6 +327,19 @@
                     </div>
                 </div>
             </div>
+            <div class="timeline__container timeline__imagesLeft">
+                <div class="timeline__time"><i class="fa-solid fa-image"></i> Pictures while studying at Cybersoft</div>
+                <div class="timeline__content timeline__flex">
+                    <div class="timeline__gallery">
+                        <a href="/images/cyber1.png" data-fancybox="gallery-cyber"><img src="/images/cyber1.png"
+                                alt=""></a>
+                        <a href="/images/cyber2.png" data-fancybox="gallery-cyber"><img src="/images/cyber2.png"
+                                alt=""></a>
+                        <a href="/images/cyber3.png" data-fancybox="gallery-cyber"><img src="/images/cyber3.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Modal Degree -->
         <div class="modal fade" id="CVModalDegree" tabindex="-1" aria-labelledby="CVModalLabelDegree"
@@ -324,8 +352,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <object class="pdf" data="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
-                        </object>
+                        <iframe class="pdf" src="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -341,8 +369,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <object class="pdf" data="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
-                        </object>
+                        <iframe class="pdf" src="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -358,9 +386,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <object class="pdf" data="/pdf/Certificate_Cybersoft_Lê Trung Tín.pdf" width="100%"
-                            height="550">
-                        </object>
+                        <iframe class="pdf" src="/pdf/Certificate_Cybersoft_Lê Trung Tín.pdf" width="100%" height="550">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -376,8 +403,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <object class="pdf" data="/pdf/Transcript_Cybersoft_Lê Trung Tín.pdf" width="100%" height="550">
-                        </object>
+                        <iframe class="pdf" src="/pdf/Transcript_Cybersoft_Lê Trung Tín.pdf" width="100%" height="550">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -397,6 +424,8 @@
 
     <!-- BS5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FANCYBOX JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
 </body>
