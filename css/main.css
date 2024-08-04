@@ -109,6 +109,10 @@ header .ltt__navbar .darkLightMode .btn-mode {
 }
 header .ltt__navbar .darkLightMode .btn-mode i {
   color: #222831;
+  transition: all 0.45s;
+}
+header .ltt__navbar .darkLightMode .btn-mode:hover i {
+  color: #fff;
 }
 header .ltt__navbar .darkLightMode .btn-mode:hover::before {
   transform: skewX(30deg) translateX(-2.5px);
@@ -150,12 +154,13 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
 }
 .cover .cover__content .cover__intro .cover__info {
   color: #c7c7c7;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 370px;
   animation-delay: 0.5s;
 }
 .cover .cover__content .cover__intro .cover__btn {
   animation-delay: 1.5s;
+  margin-top: 30px;
 }
 .cover .cover__content .cover__intro .cover__btn button {
   animation: heartbeat 1.5s ease-in-out infinite both;
@@ -261,7 +266,7 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
   text-align: justify;
 }
 .about .about__overlay .about__info .about__contact {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .about .about__overlay .about__info .about__contact .about__contact__item {
   margin-bottom: 5px;
@@ -275,32 +280,8 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
   text-decoration: none;
   color: #e4f9f5;
 }
-.about .about__overlay .about__info .about__social {
-  display: flex;
-  align-items: center;
-  margin: 15px 0 30px;
-}
-.about .about__overlay .about__info .about__social .about__social__item {
-  margin-right: 15px;
-}
-.about .about__overlay .about__info .about__social .about__social__item i {
-  font-size: 1.25rem;
-  padding: 10px 15px;
-  background-color: #fff;
-  border-radius: 10px;
-  transition: all 0.3s;
-}
-.about .about__overlay .about__info .about__social .about__social__item i:hover {
-  background-color: #eeeeee;
-}
-.about .about__overlay .about__info .about__social .about__social__item .social-fb {
-  color: #0866ff;
-}
-.about .about__overlay .about__info .about__social .about__social__item .social-linked {
-  color: #0075b4;
-}
-.about .about__overlay .about__info .about__social .about__social__item .social-github {
-  color: #000;
+.about .about__overlay .about__info .about__btn {
+  margin-top: 30px;
 }
 .about .about__overlay .about__info .about__btn button {
   animation: heartbeat 1.5s ease-in-out infinite both;
@@ -344,6 +325,99 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
 }
 .education .education__title {
   padding-top: 50px;
+}
+
+.projects {
+  padding-top: 135px;
+  padding-bottom: 35px;
+}
+.projects .projects__carousel {
+  margin-top: 50px;
+}
+.projects .projects__carousel .projects__content {
+  height: 450px;
+  padding: 30px 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(228, 249, 245, 0.7);
+  border-radius: 15px;
+}
+.projects .projects__carousel .projects__content .projects__showImg {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.projects .projects__carousel .projects__content .projects__showImg img {
+  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+.projects .projects__carousel .projects__content .projects__showImg img:hover {
+  transform: scale(1.05);
+}
+.projects .projects__carousel .projects__content .projects__detailInfo {
+  width: 50%;
+  padding: 0 35px;
+}
+.projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__name {
+  margin-bottom: 20px;
+  color: #222831;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__name .projects__detailInfo__name__number {
+  font-weight: 900;
+  position: relative;
+}
+.projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__name .projects__detailInfo__name__number::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  position: absolute;
+  top: 50%;
+  left: 32%;
+}
+.projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__technology {
+  display: flex;
+  gap: 0 15px;
+  margin-bottom: 20px;
+}
+.projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__technology .projects__detailInfo__technology__item {
+  padding: 5px 15px;
+  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  border-radius: 20px;
+  font-weight: 500;
+}
+.projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__description {
+  margin-bottom: 30px;
+  color: #222831;
+}
+.projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__btn .btn-projectsLive {
+  margin-right: 10px;
+}
+.projects .projects__carousel .carousel-indicators [data-bs-target] {
+  background-color: #11999e;
+}
+.projects .projects__carousel .carousel-control-next {
+  right: -5px;
+}
+.projects .projects__carousel .carousel-control-prev {
+  left: -5px;
+}
+.projects .projects__carousel .carousel-control-next,
+.projects .projects__carousel .carousel-control-prev {
+  width: 5%;
+}
+.projects .projects__carousel .carousel-control-next i,
+.projects .projects__carousel .carousel-control-prev i {
+  font-size: 2.25rem;
+  color: #11999e;
 }
 
 .back-to-top .btn-toTop {
@@ -716,4 +790,36 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
   position: absolute;
   bottom: -5px;
   left: 0;
+}
+
+.show__social {
+  display: flex;
+  align-items: center;
+}
+.show__social .show__social__item {
+  margin-right: 20px;
+}
+.show__social .show__social__item i {
+  font-size: 1.25rem;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.show__social .show__social__item i:hover {
+  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  color: #fff;
+  border-radius: 50%;
+}
+.show__social .show__social__item .social-fb {
+  color: #0866ff;
+}
+.show__social .show__social__item .social-linked {
+  color: #0075b4;
+}
+.show__social .show__social__item .social-github {
+  color: #000;
 }/*# sourceMappingURL=main.css.map */

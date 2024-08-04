@@ -24,7 +24,7 @@
         }
       }
       .about__contact {
-        margin-bottom: $mg-1;
+        margin-bottom: $mg-4;
         .about__contact__item {
           margin-bottom: $mg-0;
           i {
@@ -38,34 +38,8 @@
           }
         }
       }
-      .about__social {
-        display: flex;
-        align-items: center;
-        margin: $mg-2 0 $mg-3;
-        .about__social__item {
-          margin-right: $mg-2;
-          i {
-            font-size: $fs-2;
-            padding: $pd-1 $pd-2;
-            background-color: $color-white-0;
-            border-radius: $border-radius-1;
-            transition: all 0.3s;
-            &:hover {
-              background-color: $color-white-2;
-            }
-          }
-          .social-fb {
-            color: $color-blue-0;
-          }
-          .social-linked {
-            color: $color-blue-1;
-          }
-          .social-github {
-            color: $color-black-0;
-          }
-        }
-      }
       .about__btn {
+        margin-top: $mg-3;
         button {
           animation: heartbeat 1.5s ease-in-out infinite both;
         }

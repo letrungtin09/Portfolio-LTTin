@@ -72,8 +72,12 @@ header {
         padding: $pd-0 + 2 $pd-2 + 2;
         i {
           color: $color-black-1;
+          transition: all 0.45s;
         }
         &:hover {
+          i {
+            color: $color-white-0;
+          }
           &::before {
             transform: skewX(30deg) translateX(-2.5px);
           }

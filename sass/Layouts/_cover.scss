@@ -27,12 +27,13 @@
       }
       .cover__info {
         color: $color-white-3;
-        margin-bottom: $mg-3;
+        margin-bottom: $mg-4;
         width: 370px;
         animation-delay: 0.5s;
       }
       .cover__btn {
         animation-delay: 1.5s;
+        margin-top: $mg-3;
         button {
           animation: heartbeat 1.5s ease-in-out infinite both;
         }
