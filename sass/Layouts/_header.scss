@@ -6,9 +6,9 @@ header {
   background-color: $color-black-1;
   .ltt__navbar {
     .navbar-brand {
+      height: 100%;
       margin-right: 0;
       img {
-        width: 57px;
         height: 57px;
         transition: all 0.5s;
         &:hover {

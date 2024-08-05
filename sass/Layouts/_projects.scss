@@ -3,13 +3,16 @@
   padding-bottom: $pd-3 + 5;
   .projects__carousel {
     margin-top: $mg-5;
+    .carousel-inner {
+      border-radius: 15px;
+    }
     .projects__content {
       height: 450px;
       padding: $pd-3 $pd-4 $pd-4;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: $color-green-5;
+      background-color: $color-green-3;
       border-radius: $border-radius-1 + 5;
       .projects__showImg {
         width: 50%;

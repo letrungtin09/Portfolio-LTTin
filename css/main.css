@@ -43,10 +43,10 @@ header {
   background-color: #222831;
 }
 header .ltt__navbar .navbar-brand {
+  height: 100%;
   margin-right: 0;
 }
 header .ltt__navbar .navbar-brand img {
-  width: 57px;
   height: 57px;
   transition: all 0.5s;
 }
@@ -118,6 +118,53 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
   transform: skewX(30deg) translateX(-2.5px);
 }
 
+footer {
+  padding-top: 50px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(228, 249, 245, 0.1);
+}
+footer .footer__container .footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer__container .footer__logo img {
+  height: 57px;
+  transition: all 0.35s;
+}
+footer .footer__container .footer__logo img:hover {
+  transform: scale(1.1);
+}
+footer .footer__container .footer__ltt {
+  margin: 20px 0;
+}
+footer .footer__container .footer__ltt a {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer .footer__container .footer__social .show__social {
+  justify-content: center;
+  gap: 0 15px;
+}
+footer .footer__container .footer__social .show__social .show__social__item {
+  margin: 0;
+}
+footer .footer__container .footer__social .show__social .show__social__item i {
+  color: #fff;
+  font-size: 1.125rem;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  transition: all 0.35s;
+}
+
 .cover {
   padding-top: 85px;
   height: 700px;
@@ -157,6 +204,9 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
   margin-bottom: 20px;
   width: 370px;
   animation-delay: 0.5s;
+}
+.cover .cover__content .cover__intro .cover__social {
+  animation-delay: 1.5s;
 }
 .cover .cover__content .cover__intro .cover__btn {
   animation-delay: 1.5s;
@@ -334,13 +384,16 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
 .projects .projects__carousel {
   margin-top: 50px;
 }
+.projects .projects__carousel .carousel-inner {
+  border-radius: 15px;
+}
 .projects .projects__carousel .projects__content {
   height: 450px;
   padding: 30px 50px 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(228, 249, 245, 0.7);
+  background-color: #e4f9f5;
   border-radius: 15px;
 }
 .projects .projects__carousel .projects__content .projects__showImg {
@@ -418,6 +471,11 @@ header .ltt__navbar .darkLightMode .btn-mode:hover::before {
 .projects .projects__carousel .carousel-control-prev i {
   font-size: 2.25rem;
   color: #11999e;
+}
+
+.contact {
+  padding-top: 85px;
+  padding-bottom: 50px;
 }
 
 .back-to-top .btn-toTop {
