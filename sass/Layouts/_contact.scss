@@ -1,4 +1,65 @@
 .contact {
-  padding-top: $pd-6;
-  padding-bottom: $pd-4;
+  padding-top: $pd-9;
+  padding-bottom: $pd-6;
+  .contact__content {
+    margin-top: $mg-5;
+    display: flex;
+    border-radius: $border-radius-1 + 5;
+    overflow: hidden;
+    .contact__info {
+      width: 50%;
+      background-color: $color-green-4;
+      padding: $pd-3 $pd-4;
+      display: flex;
+      align-items: center;
+      .contact__info__title {
+        margin-bottom: $mg-2;
+        font-size: $fs-8;
+        font-weight: $fw-3;
+        i {
+          margin-left: $mg-0;
+        }
+      }
+      .contact__info__detail {
+        margin-bottom: $mg-3;
+        .contact__info__mail {
+          margin: $mg-1 0;
+        }
+        .contact__info__item {
+          i {
+            margin-right: $mg-0;
+            color: $color-green-0;
+          }
+          a {
+            text-decoration: none;
+            color: $color-green-3;
+            transition: all 0.3s;
+            &:hover {
+              color: $color-green-0;
+            }
+          }
+        }
+      }
+    }
+    .contact__avatar {
+      width: 50%;
+      overflow: hidden;
+      img {
+        opacity: 0.9;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        object-position: 100% 61%;
+        transition: all 0.35s;
+      }
+    }
+    &:hover {
+      .contact__avatar {
+        img {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
 }
