@@ -1,0 +1,41 @@
+.lightMode {
+  footer {
+    background-color: $color-light-9;
+    .footer__container {
+      .footer__logo {
+        .logo-light {
+          display: inline-block;
+        }
+        .logo-dark {
+          display: none;
+        }
+      }
+      .footer__ltt {
+        color: $color-black-1;
+        a {
+          background: linear-gradient(
+            to right,
+            $color-light-3 0%,
+            $color-light-7 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .footer__social {
+        .show__social {
+          .show__social__item {
+            i {
+              color: $color-black-1;
+              background: linear-gradient(
+                to right,
+                $color-light-3 0%,
+                $color-green-0 100%
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}

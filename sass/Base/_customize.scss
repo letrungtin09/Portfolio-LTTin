@@ -3,3 +3,11 @@
     background-color: $color-green-1;
   }
 }
+
+.lightMode {
+  .modal {
+    .modal-content {
+      background-color: $color-light-3;
+    }
+  }
+}

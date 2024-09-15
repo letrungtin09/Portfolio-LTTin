@@ -73,6 +73,23 @@ function backToTop() {
   };
 }
 
+// light mode
+function switchMode() {
+  let btnLight = document.querySelector(".btn-light");
+  let btnDark = document.querySelector(".btn-dark");
+  btnLight.addEventListener("click", function () {
+    document.querySelector("body").classList.toggle("lightMode");
+    btnDark.style.display = "inline-block";
+    btnLight.style.display = "none";
+  });
+
+  btnDark.addEventListener("click", function () {
+    document.querySelector("body").classList.remove("lightMode");
+    btnDark.style.display = "none";
+    btnLight.style.display = "inline-block";
+  });
+}
+
 // fancybox
 Fancybox.bind("[data-fancybox='gallery-fpoly']", {});
 Fancybox.bind("[data-fancybox='gallery-cyber']", {});

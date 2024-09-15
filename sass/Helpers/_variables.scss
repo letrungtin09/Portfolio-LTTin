@@ -3,14 +3,14 @@ $color-black-0: #000;
 $color-black-1: #222831;
 $color-black-2: #393e46;
 $color-black-3: rgba(228, 249, 245, 0.3);
-$color-black-4: rgba(34, 40, 49, 0.7);
-$color-black-5: rgba(34, 40, 49, 0.9);
+$color-black-4: rgba(34, 40, 49, 0.9);
+$color-black-5: rgba(34, 40, 49, 0.7);
 $color-black-6: rgba(228, 249, 245, 0.1);
 $color-white-0: #fff;
 $color-white-1: #f5f5f5;
 $color-white-2: #eeeeee;
-$color-white-3: #c7c7c7;
-$color-green-0: #30e3ca;
+$color-white-3: rgb(199, 199, 199);
+$color-green-0: rgb(48, 227, 202);
 $color-green-1: #11999e;
 $color-green-2: #40514e;
 $color-green-3: #e4f9f5;
@@ -19,6 +19,17 @@ $color-green-5: rgba(228, 249, 245, 0.7);
 $color-pink-0: #fc5185;
 $color-blue-0: #0866ff;
 $color-blue-1: #0075b4;
+// light color
+
+$color-light-1: rgba(118, 129, 125, 0.3);
+$color-light-2: rgb(125, 125, 125);
+$color-light-3: #24aa97;
+$color-light-4: rgb(54, 60, 69);
+$color-light-5: rgba(255, 255, 255, 0.9);
+$color-light-6: rgba(255, 255, 255, 0.7);
+$color-light-7: rgb(18, 85, 75);
+$color-light-8: rgba(36, 170, 151, 0.5);
+$color-light-9: rgba(228, 249, 245, 0.9);
 
 //FONT-WEIGHT
 $fw-0: 100;
@@ -55,6 +66,7 @@ $pd-6: 85px;
 $pd-7: 135px;
 $pd-8: 75px;
 $pd-9: 120px;
+$pd-10: 100px;
 
 //MARGIN
 $mg-0: 5px;

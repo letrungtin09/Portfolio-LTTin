@@ -16,6 +16,16 @@ header {
         }
       }
     }
+    .logo-light {
+      img {
+        display: none;
+      }
+    }
+    .logo-dark {
+      img {
+        display: inline-block;
+      }
+    }
     #navbarLTT {
       justify-content: center;
       .navbar-nav {
@@ -67,20 +77,30 @@ header {
     }
     .darkLightMode {
       .btn-mode {
-        font-size: $fs-2;
-        border-radius: $border-radius-4;
+        font-weight: $fw-3;
+        font-size: $fs-1;
+        border-radius: $border-radius-2;
         padding: $pd-0 + 2 $pd-2 + 2;
         i {
+          font-size: $fs-0;
           color: $color-black-1;
           transition: all 0.45s;
         }
         &:hover {
-          i {
-            color: $color-white-0;
-          }
           &::before {
             transform: skewX(30deg) translateX(-2.5px);
           }
+        }
+      }
+      .btn-light {
+        i {
+          color: $color-white-0;
+        }
+      }
+      .btn-dark {
+        display: none;
+        span {
+          color: $color-black-1;
         }
       }
     }

@@ -1,0 +1,49 @@
+.lightMode {
+  .projects {
+    background-color: $color-white-0;
+    .projects__carousel {
+      .projects__content {
+        background-color: $color-light-7;
+
+        .projects__detailInfo {
+          .projects__detailInfo__name {
+            @include styleText($color-white-0, $fs-7, $fw-4);
+
+            .projects__detailInfo__name__number {
+              &::after {
+                background: linear-gradient(
+                  to right,
+                  $color-light-3 0%,
+                  $color-green-0 100%
+                );
+              }
+            }
+          }
+          .projects__detailInfo__technology {
+            .projects__detailInfo__technology__item {
+              background: linear-gradient(
+                to right,
+                $color-light-3 0%,
+                $color-green-0 100%
+              );
+              color: $color-black-1;
+            }
+          }
+          .projects__detailInfo__description {
+            color: $color-white-0;
+          }
+        }
+      }
+      .carousel-indicators [data-bs-target] {
+        background-color: $color-light-3;
+      }
+
+      .carousel-control-next,
+      .carousel-control-prev {
+        i {
+          color: $color-light-3;
+        }
+      }
+    }
+  }
+}

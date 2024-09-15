@@ -27,12 +27,30 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(-45deg, #11999e, #30e3ca);
+  background-image: linear-gradient(-45deg, #11999e, rgb(48, 227, 202));
+  border-radius: 50px;
+}
+
+.lightMode::-webkit-scrollbar {
+  width: 10px;
+}
+
+.lightMode::-webkit-scrollbar-track {
+  background-color: rgba(118, 129, 125, 0.3);
+  border-radius: 50px;
+}
+
+.lightMode::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(-45deg, rgb(48, 227, 202), #24aa97);
   border-radius: 50px;
 }
 
 .modal .modal-content {
   background-color: #11999e;
+}
+
+.lightMode .modal .modal-content {
+  background-color: #24aa97;
 }
 
 header {
@@ -52,6 +70,12 @@ header .ltt__navbar .navbar-brand img {
 }
 header .ltt__navbar .navbar-brand img:hover {
   transform: scale(1.1);
+}
+header .ltt__navbar .logo-light img {
+  display: none;
+}
+header .ltt__navbar .logo-dark img {
+  display: inline-block;
 }
 header .ltt__navbar #navbarLTT {
   justify-content: center;
@@ -89,7 +113,7 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link::after {
   transition: all 0.5s;
 }
 header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link:hover {
-  color: #30e3ca;
+  color: rgb(48, 227, 202);
 }
 header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link:hover::after {
   height: 100%;
@@ -97,25 +121,33 @@ header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link:hover::after {
 header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active {
   background-color: #393e46;
   border-radius: 41px;
-  color: #30e3ca;
+  color: rgb(48, 227, 202);
 }
 header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active:hover::after {
   content: unset;
 }
 header .ltt__navbar .darkLightMode .btn-mode {
-  font-size: 1.25rem;
-  border-radius: 50%;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-radius: 20px;
   padding: 7px 17px;
 }
 header .ltt__navbar .darkLightMode .btn-mode i {
+  font-size: 1rem;
   color: #222831;
   transition: all 0.45s;
 }
-header .ltt__navbar .darkLightMode .btn-mode:hover i {
-  color: #fff;
-}
 header .ltt__navbar .darkLightMode .btn-mode:hover::before {
   transform: skewX(30deg) translateX(-2.5px);
+}
+header .ltt__navbar .darkLightMode .btn-light i {
+  color: #fff;
+}
+header .ltt__navbar .darkLightMode .btn-dark {
+  display: none;
+}
+header .ltt__navbar .darkLightMode .btn-dark span {
+  color: #222831;
 }
 
 footer {
@@ -129,6 +161,12 @@ footer .footer__container .footer__logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer .footer__container .footer__logo .logo-light {
+  display: none;
+}
+footer .footer__container .footer__logo .logo-dark {
+  display: inline-block;
 }
 footer .footer__container .footer__logo img {
   height: 57px;
@@ -144,7 +182,7 @@ footer .footer__container .footer__ltt a {
   font-weight: 700;
   text-decoration: none;
   font-size: 1rem;
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  background: linear-gradient(to right, rgb(48, 227, 202) 0%, #11999e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -161,7 +199,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   width: 35px;
   height: 35px;
   line-height: 35px;
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  background: linear-gradient(to right, rgb(48, 227, 202) 0%, #11999e 100%);
   transition: all 0.35s;
 }
 
@@ -184,7 +222,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 }
 .cover .cover__content .cover__intro .cover__career {
   animation-delay: 1.5s;
-  color: #30e3ca;
+  color: rgb(48, 227, 202);
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -200,7 +238,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   margin: 5px 0;
 }
 .cover .cover__content .cover__intro .cover__info {
-  color: #c7c7c7;
+  color: rgb(199, 199, 199);
   margin-bottom: 20px;
   width: 370px;
   animation-delay: 0.5s;
@@ -228,7 +266,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   height: 390px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #30e3ca;
+  border: 5px solid rgb(48, 227, 202);
   background-color: #11999e;
   filter: brightness(0.9);
   transition: all 0.5s;
@@ -246,7 +284,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   padding: 10px;
   background-color: #fff;
   border-radius: 20px;
-  border: 5px solid #30e3ca;
+  border: 5px solid rgb(48, 227, 202);
   transition: all 0.5s;
 }
 .cover .cover__content .cover__imgLTT .cover__proIcons .cover__proIcons__item:hover {
@@ -300,7 +338,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 .about .about__overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(34, 40, 49, 0.7) 50%, rgba(34, 40, 49, 0.9) 50%);
+  background: linear-gradient(90deg, rgba(34, 40, 49, 0.9) 50%, rgba(34, 40, 49, 0.7) 50%);
   padding-top: 85px;
   padding-bottom: 85px;
 }
@@ -324,11 +362,15 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 .about .about__overlay .about__info .about__contact .about__contact__item i {
   font-size: 1rem;
   margin-right: 5px;
-  color: #30e3ca;
+  color: rgb(48, 227, 202);
 }
 .about .about__overlay .about__info .about__contact .about__contact__item a {
   text-decoration: none;
-  color: #e4f9f5;
+  color: #fff;
+  transition: all 0.3s;
+}
+.about .about__overlay .about__info .about__contact .about__contact__item a:hover {
+  color: rgb(48, 227, 202);
 }
 .about .about__overlay .about__info .about__btn {
   margin-top: 30px;
@@ -370,7 +412,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 }
 
 .education {
-  padding-top: 75px;
+  padding-top: 85px;
   padding-bottom: 35px;
 }
 .education .education__title {
@@ -431,7 +473,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   display: inline-block;
   width: 50px;
   height: 3px;
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  background: linear-gradient(to right, rgb(48, 227, 202) 0%, #11999e 100%);
   position: absolute;
   top: 50%;
   left: 32%;
@@ -443,7 +485,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 }
 .projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__technology .projects__detailInfo__technology__item {
   padding: 5px 15px;
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  background: linear-gradient(to right, rgb(48, 227, 202) 0%, #11999e 100%);
   border-radius: 20px;
   font-weight: 500;
 }
@@ -475,7 +517,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 
 .contact {
   padding-top: 120px;
-  padding-bottom: 85px;
+  padding-bottom: 100px;
 }
 .contact .contact__content {
   margin-top: 50px;
@@ -506,7 +548,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 }
 .contact .contact__content .contact__info .contact__info__detail .contact__info__item i {
   margin-right: 5px;
-  color: #30e3ca;
+  color: rgb(48, 227, 202);
 }
 .contact .contact__content .contact__info .contact__info__detail .contact__info__item a {
   text-decoration: none;
@@ -514,7 +556,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   transition: all 0.3s;
 }
 .contact .contact__content .contact__info .contact__info__detail .contact__info__item a:hover {
-  color: #30e3ca;
+  color: rgb(48, 227, 202);
 }
 .contact .contact__content .contact__avatar {
   width: 50%;
@@ -559,7 +601,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 
 .btn--green {
   color: #fff;
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  background: linear-gradient(to right, rgb(48, 227, 202) 0%, #11999e 100%);
   border-radius: 20px;
   font-size: 1rem;
   font-weight: 700;
@@ -599,7 +641,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 
 .btn--greenSmall {
   color: #fff;
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  background: linear-gradient(to right, rgb(48, 227, 202) 0%, #11999e 100%);
   border-radius: 20px;
   font-size: 0.875rem;
   font-weight: 700;
@@ -687,7 +729,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
     text-shadow: 0 0 0 transparent;
   }
   100% {
-    text-shadow: 0 0 19px #30e3ca;
+    text-shadow: 0 0 19px rgb(48, 227, 202);
   }
 }
 @keyframes heartbeat {
@@ -899,7 +941,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   display: inline-block;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  background: linear-gradient(to right, rgb(48, 227, 202) 0%, #11999e 100%);
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -923,7 +965,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   transition: all 0.5s;
 }
 .show__social .show__social__item i:hover {
-  background: linear-gradient(to right, #30e3ca 0%, #11999e 100%);
+  background: linear-gradient(to right, rgb(48, 227, 202) 0%, #11999e 100%);
   color: #fff;
   border-radius: 50%;
 }
@@ -935,4 +977,307 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 }
 .show__social .show__social__item .social-github {
   color: #000;
+}
+
+.lightMode header {
+  background-color: #fff;
+}
+.lightMode header .ltt__navbar .logo-light img {
+  display: inline-block;
+}
+.lightMode header .ltt__navbar .logo-dark img {
+  display: none;
+}
+.lightMode header .ltt__navbar #navbarLTT .navbar-nav {
+  background-color: rgba(118, 129, 125, 0.3);
+}
+.lightMode header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link {
+  color: #222831;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.lightMode header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link::after {
+  background-color: #393e46;
+}
+.lightMode header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(48, 227, 202);
+}
+.lightMode header .ltt__navbar #navbarLTT .navbar-nav .nav-item .nav-link.active {
+  background-color: #393e46;
+  color: rgb(48, 227, 202);
+}
+
+.lightMode .cover {
+  background-color: #fff;
+  background-image: url(../../images/cover-light.png);
+  background-repeat: no-repeat;
+  background-position: -190px 79px;
+  background-size: 1000px;
+}
+.lightMode .cover .cover__content .cover__intro .cover__career {
+  color: #24aa97;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.lightMode .cover .cover__content .cover__intro .cover__name .cover__fullName {
+  color: #222831;
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+.lightMode .cover .cover__content .cover__intro .cover__info {
+  color: rgb(125, 125, 125);
+}
+.lightMode .cover .cover__content .cover__imgLTT .cover__avatar .avatarLTTin {
+  border: 5px solid #24aa97;
+  background-color: rgb(48, 227, 202);
+  filter: brightness(1);
+}
+.lightMode .cover .cover__content .cover__imgLTT .cover__avatar .avatarLTTin:hover {
+  filter: brightness(0.95);
+}
+.lightMode .cover .cover__content .cover__imgLTT .cover__proIcons .cover__proIcons__item {
+  background-color: #222831;
+  border: 5px solid #24aa97;
+}
+.lightMode .cover .cover__content .cover__imgLTT .cover__proIcons .cover__proIcons__item:hover {
+  background-color: rgb(54, 60, 69);
+}
+
+.lightMode .about .about__overlay {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.7) 50%);
+}
+.lightMode .about .about__overlay .about__info .about__text .about__intro {
+  color: #222831;
+}
+.lightMode .about .about__overlay .about__info .about__contact {
+  color: #222831;
+}
+.lightMode .about .about__overlay .about__info .about__contact .about__contact__item i {
+  color: #24aa97;
+}
+.lightMode .about .about__overlay .about__info .about__contact .about__contact__item a {
+  color: #222831;
+  transition: all 0.3s;
+}
+.lightMode .about .about__overlay .about__info .about__contact .about__contact__item a:hover {
+  color: #24aa97;
+}
+
+.lightMode .education {
+  background-color: #fff;
+}
+
+.lightMode .projects {
+  background-color: #fff;
+}
+.lightMode .projects .projects__carousel .projects__content {
+  background-color: rgb(18, 85, 75);
+}
+.lightMode .projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__name {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.lightMode .projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__name .projects__detailInfo__name__number::after {
+  background: linear-gradient(to right, #24aa97 0%, rgb(48, 227, 202) 100%);
+}
+.lightMode .projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__technology .projects__detailInfo__technology__item {
+  background: linear-gradient(to right, #24aa97 0%, rgb(48, 227, 202) 100%);
+  color: #222831;
+}
+.lightMode .projects .projects__carousel .projects__content .projects__detailInfo .projects__detailInfo__description {
+  color: #fff;
+}
+.lightMode .projects .projects__carousel .carousel-indicators [data-bs-target] {
+  background-color: #24aa97;
+}
+.lightMode .projects .projects__carousel .carousel-control-next i,
+.lightMode .projects .projects__carousel .carousel-control-prev i {
+  color: #24aa97;
+}
+
+.lightMode .contact {
+  background-color: #fff;
+}
+.lightMode .contact .contact__content .contact__info {
+  background-color: rgba(36, 170, 151, 0.5);
+}
+.lightMode .contact .contact__content .contact__info .contact__info__title {
+  color: #222831;
+}
+.lightMode .contact .contact__content .contact__info .contact__info__detail .contact__info__item {
+  color: #222831;
+}
+.lightMode .contact .contact__content .contact__info .contact__info__detail .contact__info__item i {
+  color: #24aa97;
+}
+.lightMode .contact .contact__content .contact__info .contact__info__detail .contact__info__item a {
+  color: #222831;
+}
+.lightMode .contact .contact__content .contact__info .contact__info__detail .contact__info__item a:hover {
+  color: #24aa97;
+}
+
+.lightMode footer {
+  background-color: rgba(228, 249, 245, 0.9);
+}
+.lightMode footer .footer__container .footer__logo .logo-light {
+  display: inline-block;
+}
+.lightMode footer .footer__container .footer__logo .logo-dark {
+  display: none;
+}
+.lightMode footer .footer__container .footer__ltt {
+  color: #222831;
+}
+.lightMode footer .footer__container .footer__ltt a {
+  background: linear-gradient(to right, #24aa97 0%, rgb(18, 85, 75) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lightMode footer .footer__container .footer__social .show__social .show__social__item i {
+  color: #222831;
+  background: linear-gradient(to right, #24aa97 0%, rgb(48, 227, 202) 100%);
+}
+
+.lightMode .back-to-top .btn-toTop {
+  background-color: rgba(36, 170, 151, 0.5);
+}
+.lightMode .back-to-top .btn-toTop i {
+  color: #222831;
+}
+.lightMode .back-to-top .btn-toTop:hover {
+  background-color: #24aa97;
+}
+
+.lightMode .btn--green {
+  color: #222831;
+  background: linear-gradient(to right, #24aa97 0%, rgb(48, 227, 202) 100%);
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 7px 20px;
+  border: none;
+  transition: all 0.5s;
+}
+.lightMode .btn--green::before {
+  content: "";
+  background-color: rgb(48, 227, 202);
+}
+.lightMode .btn--green span,
+.lightMode .btn--green a {
+  color: #222831;
+}
+.lightMode .btn--greenSmall {
+  color: #222831;
+  background: linear-gradient(to right, #24aa97 0%, rgb(48, 227, 202) 100%);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 5px 15px;
+  border: none;
+  transition: all 0.5s;
+}
+.lightMode .btn--greenSmall::before {
+  background-color: rgb(48, 227, 202);
+}
+.lightMode .btn--greenSmall span,
+.lightMode .btn--greenSmall a {
+  color: #222831;
+}
+
+.lightMode .show__social .show__social__item i {
+  background-color: #222831;
+}
+.lightMode .show__social .show__social__item i:hover {
+  background: linear-gradient(to right, #24aa97 0%, rgb(48, 227, 202) 100%);
+  color: #fff;
+  border-radius: 50%;
+}
+.lightMode .show__social .show__social__item .social-fb {
+  color: #fff;
+}
+.lightMode .show__social .show__social__item .social-linked {
+  color: #fff;
+}
+.lightMode .show__social .show__social__item .social-github {
+  color: #fff;
+}
+
+.lightMode .section__title span {
+  color: #222831;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.lightMode .section__title span::after {
+  background: linear-gradient(to right, #24aa97 0%, rgb(48, 227, 202) 100%);
+}
+
+.lightMode .progressBar {
+  background-color: #24aa97;
+}
+.lightMode .progressBar .progressBar__run {
+  background-color: rgb(18, 85, 75);
+}
+.lightMode .progressBar .progressBar__run .progressBar__counter {
+  background-color: #222831;
+  color: #fff;
+}
+.lightMode .progressBar .progressBar__run .progressBar__counter::after {
+  border-style: solid;
+  border-color: transparent;
+  display: inline-block;
+  border-width: 3.5px;
+  border-top-color: #222831;
+}
+.lightMode .progressBar .progressBar__text {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.lightMode .timeline::after {
+  background-color: rgb(18, 85, 75);
+}
+.lightMode .timeline .timeline__container::after {
+  background-color: rgb(18, 85, 75);
+  border: 4px solid #fc5185;
+}
+.lightMode .timeline .timeline__container .timeline__time {
+  background-color: #24aa97;
+  color: #222831;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.lightMode .timeline .timeline__container .timeline__content {
+  background-color: rgb(18, 85, 75);
+  color: #fff;
+}
+.lightMode .timeline .timeline__left::before {
+  border-style: solid;
+  border-color: transparent;
+  display: inline-block;
+  border-width: 13px;
+  border-left-color: rgb(18, 85, 75);
+}
+.lightMode .timeline .timeline__right::before {
+  border-style: solid;
+  border-color: transparent;
+  display: inline-block;
+  border-width: 13px;
+  border-right-color: rgb(18, 85, 75);
+}
+.lightMode .timeline .timeline__imagesRight::before {
+  border-style: solid;
+  border-color: transparent;
+  display: inline-block;
+  border-width: 13px;
+  border-right-color: rgb(18, 85, 75);
+}
+.lightMode .timeline .timeline__imagesLeft::before {
+  border-style: solid;
+  border-color: transparent;
+  display: inline-block;
+  border-width: 13px;
+  border-left-color: rgb(18, 85, 75);
 }/*# sourceMappingURL=main.css.map */

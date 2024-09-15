@@ -1,0 +1,34 @@
+.lightMode {
+  .about {
+    .about__overlay {
+      background: linear-gradient(
+        90deg,
+        $color-light-5 50%,
+        $color-light-6 50%
+      );
+
+      .about__info {
+        .about__text {
+          .about__intro {
+            color: $color-black-1;
+          }
+        }
+        .about__contact {
+          color: $color-black-1;
+          .about__contact__item {
+            i {
+              color: $color-light-3;
+            }
+            a {
+              color: $color-black-1;
+              transition: all 0.3s;
+              &:hover {
+                color: $color-light-3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

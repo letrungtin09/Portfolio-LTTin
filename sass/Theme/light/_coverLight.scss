@@ -1,0 +1,45 @@
+.lightMode {
+  .cover {
+    background-color: $color-white-0;
+    background-image: url(../../images/cover-light.png);
+    background-repeat: no-repeat;
+    background-position: -190px 79px;
+    background-size: 1000px;
+    .cover__content {
+      .cover__intro {
+        .cover__career {
+          @include styleText($color-light-3, $fs-2, $fw-3);
+        }
+        .cover__name {
+          .cover__fullName {
+            @include styleText($color-black-1, $fs-5, $fw-4);
+          }
+        }
+        .cover__info {
+          color: $color-light-2;
+        }
+      }
+      .cover__imgLTT {
+        .cover__avatar {
+          .avatarLTTin {
+            border: 5px solid $color-light-3;
+            background-color: $color-green-0;
+            filter: brightness(1);
+            &:hover {
+              filter: brightness(0.95);
+            }
+          }
+        }
+        .cover__proIcons {
+          .cover__proIcons__item {
+            background-color: $color-black-1;
+            border: 5px solid $color-light-3;
+            &:hover {
+              background-color: $color-light-4;
+            }
+          }
+        }
+      }
+    }
+  }
+}

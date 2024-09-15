@@ -1,0 +1,18 @@
+.lightMode {
+  .progressBar {
+    background-color: $color-light-3;
+    .progressBar__run {
+      background-color: $color-light-7;
+      .progressBar__counter {
+        background-color: $color-black-1;
+        color: $color-white-0;
+        &::after {
+          @include arrow(3.5px, down, $color-black-1);
+        }
+      }
+    }
+    .progressBar__text {
+      @include styleText($color-white-0, $fs-1, $fw-3);
+    }
+  }
+}

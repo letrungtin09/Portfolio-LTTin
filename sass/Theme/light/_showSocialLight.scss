@@ -1,0 +1,27 @@
+.lightMode {
+  .show__social {
+    .show__social__item {
+      i {
+        background-color: $color-black-1;
+        &:hover {
+          background: linear-gradient(
+            to right,
+            $color-light-3 0%,
+            $color-green-0 100%
+          );
+          color: $color-white-0;
+          border-radius: $border-radius-4;
+        }
+      }
+      .social-fb {
+        color: $color-white-0;
+      }
+      .social-linked {
+        color: $color-white-0;
+      }
+      .social-github {
+        color: $color-white-0;
+      }
+    }
+  }
+}

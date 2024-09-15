@@ -34,7 +34,11 @@
           }
           a {
             text-decoration: none;
-            color: $color-green-3;
+            color: $color-white-0;
+            transition: all 0.3s;
+            &:hover {
+              color: $color-green-0;
+            }
           }
         }
       }

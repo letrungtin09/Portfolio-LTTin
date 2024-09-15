@@ -1,0 +1,14 @@
+.lightMode {
+  .section__title {
+    span {
+      @include styleText($color-black-1, $fs-3, $fw-3);
+      &::after {
+        background: linear-gradient(
+          to right,
+          $color-light-3 0%,
+          $color-green-0 100%
+        );
+      }
+    }
+  }
+}

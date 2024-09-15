@@ -27,7 +27,8 @@
     <header>
         <nav class="ltt__navbar navbar navbar-expand-lg">
             <div class="container-fluid container-ltt">
-                <a class="navbar-brand" href="/"><img src="/images/logo-ltt.png" alt=""></a>
+                <a class="navbar-brand logo-dark" href="/"><img src="/images/logo-ltt.png" alt=""></a>
+                <a class="navbar-brand logo-light" href="/"><img src="/images/logo-ltt-light.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLTT"
                     aria-controls="navbarLTT" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,7 +53,12 @@
                     </ul>
                 </div>
                 <div class="darkLightMode">
-                    <button class="btn--green btn-mode"><span><i class="fa-solid fa-moon ms-0"></i></span></button>
+                    <button class="btn--green btn-mode btn-dark" onclick="switchMode()"><span><i
+                                class="fa-solid fa-moon ms-0"></i>
+                            Dark</span></button>
+                    <button class="btn--green btn-mode btn-light" onclick="switchMode()"><span><i
+                                class="fa-solid fa-sun ms-0"></i>
+                            Light</span></button>
                 </div>
             </div>
         </nav>
@@ -125,7 +131,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <iframe class="pdf" src="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
+                        <iframe class="pdf" src="/pdf/CV__Front-End-Web__Lê-Trung-Tín.pdf" width="100%" height="550">
                         </iframe>
                     </div>
                 </div>
@@ -263,7 +269,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <iframe class="pdf" src="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
+                        <iframe class="pdf" src="/pdf/CV__Front-End-Web__Lê-Trung-Tín.pdf" width="100%" height="550">
                         </iframe>
                     </div>
                 </div>
@@ -290,7 +296,7 @@
                     <div class="timeline__title"><i class="fa-solid fa-graduation-cap"></i> Website programming
                         (Front-end) at FPT Polytechnic College</div>
                     <div class="timeline__text"><i class="fa-solid fa-trophy"></i> Graduated with honors with average
-                        score: 8.7</div>
+                        score: 8.6</div>
                     <div class="timeline__btn">
                         <button type="button" class="btn-degree btn--greenSmall" data-bs-toggle="modal"
                             data-bs-target="#CVModalDegree">
@@ -364,7 +370,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <iframe class="pdf" src="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
+                        <iframe class="pdf" src="/pdf/CV__Front-End-Web__Lê-Trung-Tín.pdf" width="100%" height="550">
                         </iframe>
                     </div>
                 </div>
@@ -381,7 +387,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <iframe class="pdf" src="/pdf/CV_Front End Web_Lê Trung Tín.pdf" width="100%" height="550">
+                        <iframe class="pdf" src="/pdf/Transcript__FPT-Polytechnic__Lê-Trung-Tín.pdf" width="100%"
+                            height="550">
                         </iframe>
                     </div>
                 </div>
@@ -398,7 +405,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <iframe class="pdf" src="/pdf/Certificate_Cybersoft_Lê Trung Tín.pdf" width="100%" height="550">
+                        <iframe class="pdf" src="/pdf/Certificate__Cybersoft__Lê-Trung-Tín.pdf" width="100%"
+                            height="550">
                         </iframe>
                     </div>
                 </div>
@@ -415,7 +423,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <iframe class="pdf" src="/pdf/Transcript_Cybersoft_Lê Trung Tín.pdf" width="100%" height="550">
+                        <iframe class="pdf" src="/pdf/Transcript__Cybersoft__Lê-Trung-Tín.pdf" width="100%"
+                            height="550">
                         </iframe>
                     </div>
                 </div>
@@ -666,7 +675,8 @@
     <footer>
         <div class="footer__container">
             <div class="footer__logo">
-                <img src="./images/logo-ltt.png" alt="">
+                <img class="logo-dark" src="./images/logo-ltt.png" alt="">
+                <img class="logo-light" src="./images/logo-ltt-light.png" alt="">
             </div>
             <div class="footer__ltt">
                 Designed and built by <a href="#aboutLTT">Le Trung Tin</a>

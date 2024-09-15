@@ -9,6 +9,12 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      .logo-light {
+        display: none;
+      }
+      .logo-dark {
+        display: inline-block;
+      }
       img {
         height: 57px;
         transition: all 0.35s;

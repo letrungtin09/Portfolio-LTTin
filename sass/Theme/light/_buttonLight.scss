@@ -1,0 +1,40 @@
+.lightMode {
+  .btn--green {
+    @include styleButton(
+      $color-black-1,
+      linear-gradient(to right, $color-light-3 0%, $color-green-0 100%),
+      $border-radius-2,
+      $fs-0,
+      $fw-4,
+      $pd-0 + 2,
+      $pd-2 + 5
+    );
+    &::before {
+      content: "";
+      background-color: $color-green-0;
+    }
+    span,
+    a {
+      color: $color-black-1;
+    }
+  }
+
+  .btn--greenSmall {
+    @include styleButton(
+      $color-black-1,
+      linear-gradient(to right, $color-light-3 0%, $color-green-0 100%),
+      $border-radius-2,
+      $fs-1,
+      $fw-4,
+      $pd-0,
+      $pd-2
+    );
+    &::before {
+      background-color: $color-green-0;
+    }
+    span,
+    a {
+      color: $color-black-1;
+    }
+  }
+}

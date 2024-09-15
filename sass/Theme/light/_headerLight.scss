@@ -1,0 +1,37 @@
+.lightMode {
+  header {
+    background-color: $color-white-0;
+    .ltt__navbar {
+      .logo-light {
+        img {
+          display: inline-block;
+        }
+      }
+      .logo-dark {
+        img {
+          display: none;
+        }
+      }
+      #navbarLTT {
+        .navbar-nav {
+          background-color: $color-light-1;
+          .nav-item {
+            .nav-link {
+              @include styleText($color-black-1, $fs-1, $fw-3);
+              &::after {
+                background-color: $color-black-2;
+              }
+              &:hover {
+                color: $color-green-0;
+              }
+              &.active {
+                background-color: $color-black-2;
+                color: $color-green-0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

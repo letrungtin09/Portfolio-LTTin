@@ -1,0 +1,41 @@
+.lightMode {
+  .timeline {
+    &::after {
+      background-color: $color-light-7;
+    }
+    .timeline__container {
+      &::after {
+        background-color: $color-light-7;
+        border: 4px solid $color-pink-0;
+      }
+      .timeline__time {
+        background-color: $color-light-3;
+        @include styleText($color-black-1, $fs-0, $fw-4);
+      }
+      .timeline__content {
+        background-color: $color-light-7;
+        color: $color-white-0;
+      }
+    }
+    .timeline__left {
+      &::before {
+        @include arrow(13px, right, $color-light-7);
+      }
+    }
+    .timeline__right {
+      &::before {
+        @include arrow(13px, left, $color-light-7);
+      }
+    }
+    .timeline__imagesRight {
+      &::before {
+        @include arrow(13px, left, $color-light-7);
+      }
+    }
+    .timeline__imagesLeft {
+      &::before {
+        @include arrow(13px, right, $color-light-7);
+      }
+    }
+  }
+}

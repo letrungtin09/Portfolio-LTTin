@@ -1,0 +1,14 @@
+.lightMode {
+  .back-to-top {
+    .btn-toTop {
+      background-color: $color-light-8;
+
+      i {
+        color: $color-black-1;
+      }
+      &:hover {
+        background-color: $color-light-3;
+      }
+    }
+  }
+}
