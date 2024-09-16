@@ -55,8 +55,7 @@
           border-radius: $border-radius-4;
           border: 5px solid $color-green-0;
           background-color: $color-green-1;
-          filter: brightness(0.9);
-          // box-shadow: 0 0 25px 0px $color-green-3;
+          filter: brightness(0.95);
           transition: all 0.5s;
           &:hover {
             filter: brightness(1);

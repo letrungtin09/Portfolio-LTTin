@@ -80,7 +80,8 @@ header {
         font-weight: $fw-3;
         font-size: $fs-1;
         border-radius: $border-radius-2;
-        padding: $pd-0 + 2 $pd-2 + 2;
+        padding: $pd-0 + 2 0;
+        width: 75px;
         i {
           font-size: $fs-0;
           color: $color-black-1;
@@ -93,6 +94,7 @@ header {
         }
       }
       .btn-light {
+        display: inline-block;
         i {
           color: $color-white-0;
         }

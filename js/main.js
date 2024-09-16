@@ -79,14 +79,10 @@ function switchMode() {
   let btnDark = document.querySelector(".btn-dark");
   btnLight.addEventListener("click", function () {
     document.querySelector("body").classList.toggle("lightMode");
-    btnDark.style.display = "inline-block";
-    btnLight.style.display = "none";
   });
 
   btnDark.addEventListener("click", function () {
     document.querySelector("body").classList.remove("lightMode");
-    btnDark.style.display = "none";
-    btnLight.style.display = "inline-block";
   });
 }
 

@@ -130,7 +130,8 @@ header .ltt__navbar .darkLightMode .btn-mode {
   font-weight: 500;
   font-size: 0.875rem;
   border-radius: 20px;
-  padding: 7px 17px;
+  padding: 7px 0;
+  width: 75px;
 }
 header .ltt__navbar .darkLightMode .btn-mode i {
   font-size: 1rem;
@@ -139,6 +140,9 @@ header .ltt__navbar .darkLightMode .btn-mode i {
 }
 header .ltt__navbar .darkLightMode .btn-mode:hover::before {
   transform: skewX(30deg) translateX(-2.5px);
+}
+header .ltt__navbar .darkLightMode .btn-light {
+  display: inline-block;
 }
 header .ltt__navbar .darkLightMode .btn-light i {
   color: #fff;
@@ -268,7 +272,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   border-radius: 50%;
   border: 5px solid rgb(48, 227, 202);
   background-color: #11999e;
-  filter: brightness(0.9);
+  filter: brightness(0.95);
   transition: all 0.5s;
 }
 .cover .cover__content .cover__imgLTT .cover__avatar .avatarLTTin:hover {
@@ -1006,6 +1010,12 @@ footer .footer__container .footer__social .show__social .show__social__item i {
   background-color: #393e46;
   color: rgb(48, 227, 202);
 }
+.lightMode header .ltt__navbar .darkLightMode .btn-light {
+  display: none;
+}
+.lightMode header .ltt__navbar .darkLightMode .btn-dark {
+  display: inline-block;
+}
 
 .lightMode .cover {
   background-color: #fff;
@@ -1030,10 +1040,6 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 .lightMode .cover .cover__content .cover__imgLTT .cover__avatar .avatarLTTin {
   border: 5px solid #24aa97;
   background-color: rgb(48, 227, 202);
-  filter: brightness(1);
-}
-.lightMode .cover .cover__content .cover__imgLTT .cover__avatar .avatarLTTin:hover {
-  filter: brightness(0.95);
 }
 .lightMode .cover .cover__content .cover__imgLTT .cover__proIcons .cover__proIcons__item {
   background-color: #222831;

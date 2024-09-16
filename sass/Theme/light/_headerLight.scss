@@ -32,6 +32,14 @@
           }
         }
       }
+      .darkLightMode {
+        .btn-light {
+          display: none;
+        }
+        .btn-dark {
+          display: inline-block;
+        }
+      }
     }
   }
 }

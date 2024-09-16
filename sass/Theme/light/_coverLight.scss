@@ -24,10 +24,6 @@
           .avatarLTTin {
             border: 5px solid $color-light-3;
             background-color: $color-green-0;
-            filter: brightness(1);
-            &:hover {
-              filter: brightness(0.95);
-            }
           }
         }
         .cover__proIcons {
