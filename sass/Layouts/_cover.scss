@@ -49,8 +49,7 @@
         justify-content: center;
         align-items: center;
         .avatarLTTin {
-          width: 340px;
-          height: 390px;
+          width: 57%;
           object-fit: cover;
           border-radius: $border-radius-4;
           border: 5px solid $color-green-0;
@@ -68,8 +67,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 70px;
-          height: 70px;
+          width: 15%;
           padding: $pd-1;
           background-color: $color-white-0;
           border-radius: $border-radius-2;
@@ -79,40 +77,41 @@
             background-color: $color-white-2;
           }
           img {
-            width: 45px;
-            height: 45px;
+            width: 70%;
             object-fit: contain;
             animation: pulsate-bck 1.5s ease-in-out infinite both;
           }
         }
         .htmlIcon {
           position: absolute;
-          top: 25px;
-          left: 135px;
+          top: 10%;
+          left: 20%;
           animation-delay: 1.5s;
         }
         .cssIcon {
           position: absolute;
-          top: 75px;
-          right: 105px;
+          top: 20%;
+          right: 15.7%;
           animation-delay: 2s;
         }
         .frameworkIcon {
           justify-content: space-around;
-          width: 140px;
+          width: 28.5%;
           position: absolute;
-          bottom: 50px;
-          left: 75px;
+          bottom: 12%;
+          left: 10%;
           animation-delay: 2.5s;
+          img {
+            width: 43%;
+          }
         }
         .jsIcon {
           position: absolute;
-          bottom: 15px;
-          right: 150px;
+          bottom: 7%;
+          right: 23%;
           animation-delay: 3s;
           img {
-            width: 40px;
-            height: 40px;
+            width: 90%;
           }
         }
       }

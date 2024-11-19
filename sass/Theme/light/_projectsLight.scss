@@ -10,12 +10,8 @@
             @include styleText($color-white-0, $fs-7, $fw-4);
 
             .projects__detailInfo__name__number {
-              &::after {
-                background: linear-gradient(
-                  to right,
-                  $color-light-3 0%,
-                  $color-green-0 100%
-                );
+              i {
+                color: $color-light-3;
               }
             }
           }

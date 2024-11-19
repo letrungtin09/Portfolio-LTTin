@@ -44,6 +44,11 @@
       color: $color-black-1;
       border-bottom-left-radius: $border-radius-1;
       border-bottom-right-radius: $border-radius-1;
+      .timeline__gallery {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
       .timeline__logo {
         margin-bottom: $mg-2;
         img {
@@ -127,7 +132,7 @@
     align-items: center;
     .timeline__gallery {
       img {
-        width: 170px;
+        width: 97%;
       }
     }
   }

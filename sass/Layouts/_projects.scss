@@ -39,25 +39,17 @@
           .projects__detailInfo__name__number {
             font-weight: $fw-5;
             position: relative;
-            &::after {
-              content: "";
-              display: inline-block;
-              width: 50px;
-              height: 3px;
-              background: linear-gradient(
-                to right,
-                $color-green-0 0%,
-                $color-green-1 100%
-              );
-              position: absolute;
-              top: 50%;
-              left: 32%;
+            i {
+              margin-left: $mg-0;
+              font-size: $fs-3;
+              color: $color-green-1;
             }
           }
         }
         .projects__detailInfo__technology {
           display: flex;
-          gap: 0 15px;
+          flex-wrap: wrap;
+          gap: 10px 15px;
           margin-bottom: $mg-4;
           .projects__detailInfo__technology__item {
             padding: $pd-0 $pd-2;
@@ -73,10 +65,26 @@
         .projects__detailInfo__description {
           margin-bottom: $mg-3;
           color: $color-black-1;
+          font-weight: $fw-3;
+          padding-left: $pd-0;
+          .projects__detailInfo__description__time {
+            margin: $mg-0 0;
+          }
+          i {
+            margin-right: $mg-0;
+          }
         }
         .projects__detailInfo__btn {
+          display: flex;
+          .btn-projectsLTT {
+            display: flex;
+            align-items: center;
+            i {
+              margin-left: $mg-1;
+            }
+          }
           .btn-projectsLive {
-            margin-right: $mg-1;
+            margin-right: $mg-2;
           }
         }
       }

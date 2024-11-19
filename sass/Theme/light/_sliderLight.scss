@@ -1,0 +1,31 @@
+.lightMode {
+  .sliderLTT {
+    background-color: $color-white-0;
+    .sliderLTT__container {
+      border-top: 1px solid $color-light-3;
+      border-bottom: 1px solid $color-light-3;
+      mask-image: linear-gradient(
+        to right,
+        transparent,
+        $color-white-1 10% 90%,
+        transparent
+      );
+      .sliderLTT__list {
+        .sliderLTT__item {
+          .sliderLTT__detail {
+            span {
+              font-weight: $fw-3;
+              color: $color-black-1;
+              transition: all 0.2s;
+            }
+          }
+          &:hover {
+            span {
+              color: $color-light-3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

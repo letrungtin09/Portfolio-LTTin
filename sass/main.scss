@@ -25,7 +25,10 @@
 @import "./Components/animation";
 @import "./Components/timeline";
 @import "./Components/sectionTitle";
-@import "./Components/showSocial"; //Pages
+@import "./Components/showSocial";
+@import "./Components/slider";
+
+//Pages
 
 //Theme
 @import "./Theme/light/headerLight.scss";
@@ -41,3 +44,4 @@
 @import "./Theme/light/sectionTitleLight";
 @import "./Theme/light/progressBarLight";
 @import "./Theme/light/timelineLight";
+@import "./Theme/light/sliderLight";

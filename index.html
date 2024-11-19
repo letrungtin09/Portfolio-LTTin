@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lê Trung Tín - Portfolio Website</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- BS5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FONT AWESOME -->
@@ -53,11 +54,9 @@
                     </ul>
                 </div>
                 <div class="darkLightMode">
-                    <button class="btn--green btn-mode btn-dark" onclick="switchMode()"><span><i
-                                class="fa-solid fa-moon ms-0"></i>
+                    <button class="btn--green btn-mode btn-dark"><span><i class="fa-solid fa-moon ms-0"></i>
                             Dark</span></button>
-                    <button class="btn--green btn-mode btn-light" onclick="switchMode()"><span><i
-                                class="fa-solid fa-sun ms-0"></i>
+                    <button class="btn--green btn-mode btn-light"><span><i class="fa-solid fa-sun ms-0"></i>
                             Light</span></button>
                 </div>
             </div>
@@ -208,7 +207,7 @@
                                         <div class="progressBar__counter">90%</div>
                                     </div>
                                     <div class="progressBar__text">
-                                        HTML / CSS
+                                        HTML5 / CSS3
                                     </div>
                                 </div>
                             </div>
@@ -230,13 +229,14 @@
                                 <div class="about__imgProLang">
                                     <img src="/images/bs.png" alt="">
                                     <img src="/images/sass.png" alt="">
+                                    <img src="/images/tailwindcss.png" alt="">
                                 </div>
                                 <div class="progressBar bs-sass">
                                     <div class="progressBar__run">
                                         <div class="progressBar__counter">85%</div>
                                     </div>
                                     <div class="progressBar__text">
-                                        Bootstrap / SASS
+                                        Bootstrap 5 / SASS / Tailwind CSS
                                     </div>
                                 </div>
                             </div>
@@ -431,14 +431,59 @@
             </div>
         </div>
     </section>
+    <!-- SLIDER -->
+    <div class="sliderLTT">
+        <div class="sliderLTT__container" style="--width:100px; --height:70px; --quantity:9;">
+            <div class="sliderLTT__list">
+                <div class="sliderLTT__item" style="--position:1;">
+                    <div class="sliderLTT__detail"><img src="/images/html.png" alt=""><span>HTML5</span></div>
+                </div>
+                <div class="sliderLTT__item" style="--position:2;">
+                    <div class="sliderLTT__detail"><img src="/images/css.png" alt=""><span>CSS3</span></div>
+                </div>
+                <div class="sliderLTT__item" style="--position:3;">
+                    <div class="sliderLTT__detail"><img class="sliderLTT__img" src="/images/bs.png" alt="">
+                        <span>Bootstrap 5</span>
+                    </div>
+                </div>
+                <div class="sliderLTT__item" style="--position:4;">
+                    <div class="sliderLTT__detail"><img class="sliderLTT__img" src="/images/sass.png"
+                            alt=""><span>SASS</span></div>
+                </div>
+                <div class="sliderLTT__item" style="--position:5;">
+                    <div class="sliderLTT__detail"><img class="sliderLTT__img" src="/images/tailwindcss.png"
+                            alt=""><span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="sliderLTT__item" style="--position:6;">
+                    <div class="sliderLTT__detail"><img src="/images/js.png" alt=""><span>JavaScript</span></div>
+                </div>
+                <div class="sliderLTT__item" style="--position:7;">
+                    <div class="sliderLTT__detail"><img src="/images/ts.png" alt=""><span>TypeScript</span></div>
+                </div>
+                <div class="sliderLTT__item" style="--position:8;">
+                    <div class="sliderLTT__detail"><img class="sliderLTT__img" src="/images/react.png"
+                            alt=""><span>React</span></div>
+                </div>
+                <div class="sliderLTT__item" style="--position:9;">
+                    <div class="sliderLTT__detail"><img class="sliderLTT__img" src="/images/angular.png"
+                            alt=""><span>Angular</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- PROJECTS -->
     <section class="projects" id="projectsLTT">
         <div class="projects__container container-ltt">
-            <div class="projects__title">
+            <div class="projects__title d-flex justify-content-between">
                 <div class="section__title">
                     <span>
                         Projects
                     </span>
+                </div>
+                <div class="projects__btnViewAll">
+                    <button class="btn--green"><a href="https://github.com/letrungtin09" target="_blank">View all on
+                            Github <i class="fa-solid fa-up-right-from-square"></i></a></button>
                 </div>
             </div>
             <div class="projects__carousel">
@@ -452,6 +497,8 @@
                             aria-label="Slide 3"></button>
                         <button type="button" data-bs-target="#carouselProjectsLTT" data-bs-slide-to="3"
                             aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselProjectsLTT" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -461,30 +508,44 @@
                                 </div>
                                 <div class="projects__detailInfo">
                                     <div class="projects__detailInfo__name">
-                                        <div class="projects__detailInfo__name__number">PROJECT 1</div>Massive
-                                        website interface
+                                        <div class="projects__detailInfo__name__number">PROJECT 1 <i
+                                                class="fa-solid fa-code"></i></div>Massive
+                                        website
                                     </div>
                                     <div class="projects__detailInfo__technology">
-                                        <div class="projects__detailInfo__technology__item">HTML</div>
-                                        <div class="projects__detailInfo__technology__item">CSS</div>
+                                        <div class="projects__detailInfo__technology__item">HTML5</div>
+                                        <div class="projects__detailInfo__technology__item">CSS3</div>
                                         <div class="projects__detailInfo__technology__item">Bootstrap 5</div>
                                         <div class="projects__detailInfo__technology__item">SASS</div>
                                         <div class="projects__detailInfo__technology__item">JavaScript</div>
+                                        <div class="projects__detailInfo__technology__item">Jquery</div>
                                     </div>
-                                    <div class="projects__detailInfo__description">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Ullam laudantium minus sequi in fuga laborum
-                                        alias? Recusandae, tempore dolorum quidem quae, repellendus ullam voluptatum
-                                        architecto rerum reiciendis iste quia fuga!</div>
+                                    <div class="projects__detailInfo__description">
+                                        <div class="projects__detailInfo__description__text"><i
+                                                class="fa-solid fa-circle-info"></i> Description: The Massive
+                                            website template project had a responsive web design and was completed in
+                                            the course at Cybersoft.
+                                        </div>
+                                        <div class="projects__detailInfo__description__time"><i
+                                                class="fa-solid fa-clock"></i> Execution time: 1,5 week.
+                                        </div>
+                                        <div class="projects__detailInfo__description__library"><i
+                                                class="fa-solid fa-book"></i> Libraries used: Isotope, CountUp, Magnific
+                                            Popup, Owl carousel.
+                                        </div>
+                                    </div>
                                     <div class="projects__detailInfo__btn">
                                         <button type="button" class="btn-projectsLive btn--green">
-                                            <a href="https://letrungtin09.github.io/Massive-Project/"
-                                                target="_blank"><span>Live Preview <i
-                                                        class="fa-regular fa-circle-play"></i></span></a>
+                                            <a class="btn-projectsLTT"
+                                                href="https://letrungtin09.github.io/Massive-Project/"
+                                                target="_blank"><span>Live
+                                                    Preview</span><i class="fa-regular fa-circle-play"></i></a>
                                         </button>
                                         <button type="button" class="btn-projectsGithub btn--green">
-                                            <a href="https://github.com/letrungtin09/Massive-Project"
-                                                target="_blank"><span>View on Github <i
-                                                        class="fa-solid fa-up-right-from-square"></i></span></a>
+                                            <a class="btn-projectsLTT"
+                                                href="https://github.com/letrungtin09/Massive-Project"
+                                                target="_blank"><span>View
+                                                    on Github</span><i class="fa-solid fa-up-right-from-square"></i></a>
                                         </button>
                                     </div>
                                 </div>
@@ -493,34 +554,46 @@
                         <div class="carousel-item">
                             <div class="projects__content">
                                 <div class="projects__showImg">
-                                    <img src="./images/project-2.png" class="d-block w-100" alt="projects-1">
+                                    <img src="./images/project-2.png" class="d-block w-100" alt="projects-2">
                                 </div>
                                 <div class="projects__detailInfo">
                                     <div class="projects__detailInfo__name">
-                                        <div class="projects__detailInfo__name__number">PROJECT 2</div>Massive
-                                        website interface
+                                        <div class="projects__detailInfo__name__number">PROJECT 2 <i
+                                                class="fa-solid fa-code"></i></div>Instruction
+                                        website
                                     </div>
                                     <div class="projects__detailInfo__technology">
-                                        <div class="projects__detailInfo__technology__item">HTML</div>
-                                        <div class="projects__detailInfo__technology__item">CSS</div>
+                                        <div class="projects__detailInfo__technology__item">HTML5</div>
+                                        <div class="projects__detailInfo__technology__item">CSS3</div>
                                         <div class="projects__detailInfo__technology__item">Bootstrap 5</div>
-                                        <div class="projects__detailInfo__technology__item">SASS</div>
                                         <div class="projects__detailInfo__technology__item">JavaScript</div>
+                                        <div class="projects__detailInfo__technology__item">Jquery</div>
                                     </div>
-                                    <div class="projects__detailInfo__description">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Ullam laudantium minus sequi in fuga laborum
-                                        alias? Recusandae, tempore dolorum quidem quae, repellendus ullam voluptatum
-                                        architecto rerum reiciendis iste quia fuga!</div>
+                                    <div class="projects__detailInfo__description">
+                                        <div class="projects__detailInfo__description__text"><i
+                                                class="fa-solid fa-circle-info"></i> Description: The Instruction
+                                            website template project had a responsive web design and was completed in
+                                            the course at Cybersoft.
+                                        </div>
+                                        <div class="projects__detailInfo__description__time"><i
+                                                class="fa-solid fa-clock"></i> Execution time: 1 week.
+                                        </div>
+                                        <div class="projects__detailInfo__description__library"><i
+                                                class="fa-solid fa-book"></i> Libraries used: Owl carousel.
+                                        </div>
+                                    </div>
                                     <div class="projects__detailInfo__btn">
                                         <button type="button" class="btn-projectsLive btn--green">
-                                            <a href="https://letrungtin09.github.io/Massive-Project/"
-                                                target="_blank"><span>Live Preview <i
-                                                        class="fa-regular fa-circle-play"></i></span></a>
+                                            <a class="btn-projectsLTT"
+                                                href="https://letrungtin09.github.io/Instruction-Project/"
+                                                target="_blank"><span>Live
+                                                    Preview</span><i class="fa-regular fa-circle-play"></i></a>
                                         </button>
                                         <button type="button" class="btn-projectsGithub btn--green">
-                                            <a href="https://github.com/letrungtin09/Massive-Project"
-                                                target="_blank"><span>View on Github <i
-                                                        class="fa-solid fa-up-right-from-square"></i></span></a>
+                                            <a class="btn-projectsLTT"
+                                                href="https://github.com/letrungtin09/Instruction-Project"
+                                                target="_blank"><span>View
+                                                    on Github</span><i class="fa-solid fa-up-right-from-square"></i></a>
                                         </button>
                                     </div>
                                 </div>
@@ -529,34 +602,46 @@
                         <div class="carousel-item">
                             <div class="projects__content">
                                 <div class="projects__showImg">
-                                    <img src="./images/project-3.png" class="d-block w-100" alt="projects-1">
+                                    <img src="./images/project-3.png" class="d-block w-100" alt="projects-3">
                                 </div>
                                 <div class="projects__detailInfo">
                                     <div class="projects__detailInfo__name">
-                                        <div class="projects__detailInfo__name__number">PROJECT 3</div>Massive
-                                        website interface
+                                        <div class="projects__detailInfo__name__number">PROJECT 3 <i
+                                                class="fa-solid fa-code"></i></div>Movie
+                                        website
                                     </div>
                                     <div class="projects__detailInfo__technology">
-                                        <div class="projects__detailInfo__technology__item">HTML</div>
-                                        <div class="projects__detailInfo__technology__item">CSS</div>
+                                        <div class="projects__detailInfo__technology__item">HTML5</div>
+                                        <div class="projects__detailInfo__technology__item">CSS3</div>
                                         <div class="projects__detailInfo__technology__item">Bootstrap 5</div>
-                                        <div class="projects__detailInfo__technology__item">SASS</div>
                                         <div class="projects__detailInfo__technology__item">JavaScript</div>
+                                        <div class="projects__detailInfo__technology__item">Jquery</div>
                                     </div>
-                                    <div class="projects__detailInfo__description">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Ullam laudantium minus sequi in fuga laborum
-                                        alias? Recusandae, tempore dolorum quidem quae, repellendus ullam voluptatum
-                                        architecto rerum reiciendis iste quia fuga!</div>
+                                    <div class="projects__detailInfo__description">
+                                        <div class="projects__detailInfo__description__text"><i
+                                                class="fa-solid fa-circle-info"></i> Description: The Movie
+                                            website template project had a responsive web design and was completed in
+                                            the course at Cybersoft.
+                                        </div>
+                                        <div class="projects__detailInfo__description__time"><i
+                                                class="fa-solid fa-clock"></i> Execution time: 1 week.
+                                        </div>
+                                        <div class="projects__detailInfo__description__library"><i
+                                                class="fa-solid fa-book"></i> Libraries used: Venobox.
+                                        </div>
+                                    </div>
                                     <div class="projects__detailInfo__btn">
                                         <button type="button" class="btn-projectsLive btn--green">
-                                            <a href="https://letrungtin09.github.io/Massive-Project/"
-                                                target="_blank"><span>Live Preview <i
-                                                        class="fa-regular fa-circle-play"></i></span></a>
+                                            <a class="btn-projectsLTT"
+                                                href="https://letrungtin09.github.io/Movie-Project/"
+                                                target="_blank"><span>Live
+                                                    Preview</span><i class="fa-regular fa-circle-play"></i></a>
                                         </button>
                                         <button type="button" class="btn-projectsGithub btn--green">
-                                            <a href="https://github.com/letrungtin09/Massive-Project"
-                                                target="_blank"><span>View on Github <i
-                                                        class="fa-solid fa-up-right-from-square"></i></span></a>
+                                            <a class="btn-projectsLTT"
+                                                href="https://github.com/letrungtin09/Movie-Project"
+                                                target="_blank"><span>View
+                                                    on Github</span><i class="fa-solid fa-up-right-from-square"></i></a>
                                         </button>
                                     </div>
                                 </div>
@@ -565,34 +650,94 @@
                         <div class="carousel-item">
                             <div class="projects__content">
                                 <div class="projects__showImg">
-                                    <img src="./images/project-4.png" class="d-block w-100" alt="projects-1">
+                                    <img src="./images/project-4.png" class="d-block w-100" alt="projects-4">
                                 </div>
                                 <div class="projects__detailInfo">
                                     <div class="projects__detailInfo__name">
-                                        <div class="projects__detailInfo__name__number">PROJECT 4</div>Massive
-                                        website interface
+                                        <div class="projects__detailInfo__name__number">PROJECT 4 <i
+                                                class="fa-solid fa-code"></i></div>Elearning
+                                        website
                                     </div>
                                     <div class="projects__detailInfo__technology">
-                                        <div class="projects__detailInfo__technology__item">HTML</div>
-                                        <div class="projects__detailInfo__technology__item">CSS</div>
+                                        <div class="projects__detailInfo__technology__item">HTML5</div>
+                                        <div class="projects__detailInfo__technology__item">CSS3</div>
                                         <div class="projects__detailInfo__technology__item">Bootstrap 5</div>
                                         <div class="projects__detailInfo__technology__item">SASS</div>
                                         <div class="projects__detailInfo__technology__item">JavaScript</div>
+                                        <div class="projects__detailInfo__technology__item">Jquery</div>
                                     </div>
-                                    <div class="projects__detailInfo__description">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Ullam laudantium minus sequi in fuga laborum
-                                        alias? Recusandae, tempore dolorum quidem quae, repellendus ullam voluptatum
-                                        architecto rerum reiciendis iste quia fuga!</div>
+                                    <div class="projects__detailInfo__description">
+                                        <div class="projects__detailInfo__description__text"><i
+                                                class="fa-solid fa-circle-info"></i> Description: The Elearning
+                                            website template project had a responsive web design and is made based on
+                                            the Udemy web.
+                                        </div>
+                                        <div class="projects__detailInfo__description__time"><i
+                                                class="fa-solid fa-clock"></i> Execution time: 1 week.
+                                        </div>
+                                        <div class="projects__detailInfo__description__library"><i
+                                                class="fa-solid fa-book"></i> Libraries used: Owl carousel.
+                                        </div>
+                                    </div>
                                     <div class="projects__detailInfo__btn">
                                         <button type="button" class="btn-projectsLive btn--green">
-                                            <a href="https://letrungtin09.github.io/Massive-Project/"
-                                                target="_blank"><span>Live Preview <i
-                                                        class="fa-regular fa-circle-play"></i></span></a>
+                                            <a class="btn-projectsLTT"
+                                                href="https://letrungtin09.github.io/Elearning-Project/"
+                                                target="_blank"><span>Live
+                                                    Preview</span><i class="fa-regular fa-circle-play"></i></a>
                                         </button>
                                         <button type="button" class="btn-projectsGithub btn--green">
-                                            <a href="https://github.com/letrungtin09/Massive-Project"
-                                                target="_blank"><span>View on Github <i
-                                                        class="fa-solid fa-up-right-from-square"></i></span></a>
+                                            <a class="btn-projectsLTT"
+                                                href="https://github.com/letrungtin09/Elearning-Project"
+                                                target="_blank"><span>View
+                                                    on Github</span><i class="fa-solid fa-up-right-from-square"></i></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="projects__content">
+                                <div class="projects__showImg">
+                                    <img src="./images/project-5.png" class="d-block w-100" alt="projects-5">
+                                </div>
+                                <div class="projects__detailInfo">
+                                    <div class="projects__detailInfo__name">
+                                        <div class="projects__detailInfo__name__number">PROJECT 5 <i
+                                                class="fa-solid fa-code"></i></div>Gadgets
+                                        website
+                                    </div>
+                                    <div class="projects__detailInfo__technology">
+                                        <div class="projects__detailInfo__technology__item">HTML5</div>
+                                        <div class="projects__detailInfo__technology__item">CSS3</div>
+                                        <div class="projects__detailInfo__technology__item">Bootstrap 5</div>
+                                        <div class="projects__detailInfo__technology__item">SASS</div>
+                                        <div class="projects__detailInfo__technology__item">JavaScript</div>
+                                        <div class="projects__detailInfo__technology__item">Jquery</div>
+                                    </div>
+                                    <div class="projects__detailInfo__description">
+                                        <div class="projects__detailInfo__description__text"><i
+                                                class="fa-solid fa-circle-info"></i> Description: The Gadgets website
+                                            template project doesn't have a responsive web design and is a
+                                            self-designed and built individual project.
+                                        </div>
+                                        <div class="projects__detailInfo__description__time"><i
+                                                class="fa-solid fa-clock"></i> Execution time: 3 week.
+                                        </div>
+                                        <div class="projects__detailInfo__description__library"><i
+                                                class="fa-solid fa-book"></i> Libraries used: Slick, Fancybox.
+                                        </div>
+                                    </div>
+                                    <div class="projects__detailInfo__btn">
+                                        <button type="button" class="btn-projectsLive btn--green">
+                                            <a class="btn-projectsLTT" href="https://letrungtin09.github.io/Gadgets/"
+                                                target="_blank"><span>Live
+                                                    Preview</span><i class="fa-regular fa-circle-play"></i></a>
+                                        </button>
+                                        <button type="button" class="btn-projectsGithub btn--green">
+                                            <a class="btn-projectsLTT" href="https://github.com/letrungtin09/Gadgets"
+                                                target="_blank"><span>View
+                                                    on Github</span><i class="fa-solid fa-up-right-from-square"></i></a>
                                         </button>
                                     </div>
                                 </div>
@@ -601,13 +746,11 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectsLTT"
                         data-bs-slide="prev">
-                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                         <i class="fa-solid fa-chevron-left"></i>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectsLTT"
                         data-bs-slide="next">
-                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                         <i class="fa-solid fa-chevron-right"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
