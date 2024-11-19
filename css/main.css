@@ -214,7 +214,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 .cover {
   padding-top: 85px;
   height: 700px;
-  background-image: url(../../images/cover.png);
+  background-image: url(../images/cover.png);
   background-repeat: no-repeat;
   background-position: -190px 79px;
   background-size: 1000px;
@@ -1111,7 +1111,7 @@ footer .footer__container .footer__social .show__social .show__social__item i {
 
 .lightMode .cover {
   background-color: #fff;
-  background-image: url(../../images/cover-light.png);
+  background-image: url(../images/cover-light.png);
   background-repeat: no-repeat;
   background-position: -190px 79px;
   background-size: 1000px;
